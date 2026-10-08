@@ -1,0 +1,1 @@
+# ig-fujiyama-posts
