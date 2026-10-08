@@ -1,0 +1,16 @@
+{
+ "slides": 10,
+ "poses": [
+  "pose_A",
+  "p27",
+  "p49",
+  "p20",
+  "pose_C",
+  "pose_B",
+  "p45",
+  "p03",
+  "p06",
+  "p04"
+ ],
+ "warnings": []
+}
