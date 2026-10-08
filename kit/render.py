@@ -126,6 +126,8 @@ FIT_JS = r"""
     if (p && (p.l < 0 || p.r > 1080)) warn.push(`${idx+1}枚目: 人物が画面の端で切れています`);
     if (body) { const rg = document.createRange(); rg.selectNodeContents(body); const rr = rg.getBoundingClientRect(); const b = {t:rr.top-top,b:rr.bottom-top,l:rr.left,r:rr.right}; if (b.b > 1310) warn.push(`${idx+1}枚目: 本文が下にはみ出しています`);
       if (p && b.r > p.l + 10 && b.b > p.t + 40) warn.push(`${idx+1}枚目: 本文と人物が重なっています`); }
+    if (p && card) { const c = rel(card); const w = p.r - p.l; const pl = p.l + w * 0.2, pr = p.r - w * 0.2, pt = p.t + (p.b - p.t) * 0.03;
+      if (pr > c.l && pl < c.r && c.b - pt > 40) warn.push(`${idx+1}枚目: 人物がカードに重なっています`); }
     [card, fcard].forEach(c => { if (c && rel(c).b > 1290) warn.push(`${idx+1}枚目: カードが下にはみ出しています`); });
     sec.querySelectorAll('.kv, .row').forEach(r => { if (r.scrollWidth > r.clientWidth + 2) warn.push(`${idx+1}枚目: 表の行が横にはみ出しています`); });
     sec.querySelectorAll('.kv span, .kv b').forEach(r => { if (r.getBoundingClientRect().height > 70) warn.push(`${idx+1}枚目: 表の行が折り返しています「${r.textContent.slice(0,20)}」`); });

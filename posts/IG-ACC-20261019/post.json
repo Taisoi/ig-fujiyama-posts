@@ -1,0 +1,136 @@
+{
+ "id": "IG-ACC-20261019",
+ "series": "accounting",
+ "title": "損益分岐点 あといくら売れば黒字？",
+ "slides": [
+  {
+   "type": "cover",
+   "label": "知ってる？",
+   "pose": "p47",
+   "title": [
+    {
+     "html": "損益分岐点",
+     "size": 140,
+     "mt": 0
+    },
+    {
+     "html": "あと<span class=\"em\">いくら</span>売れば",
+     "size": 100,
+     "mt": 22
+    },
+    {
+     "html": "黒字になる？",
+     "size": 110,
+     "mt": 8
+    }
+   ]
+  },
+  {
+   "type": "bubble",
+   "pose": "p10",
+   "bubble": "来月いくら売れば<br>赤字にならないか、<br>すぐ答えられますか？",
+   "body": "答えは、<br><span class=\"em\">損益分岐点</span>で<br>出せます。",
+   "next": "3ステップで →"
+  },
+  {
+   "type": "card",
+   "pose": "pose_D",
+   "small": "ステップ ①",
+   "heading": "費用を<br><span class=\"em\">2つ</span>に分ける",
+   "rows": [
+    [
+     "変動費",
+     "売上に比例（仕入・外注費・運賃）"
+    ],
+    [
+     "固定費",
+     "売上に関係なく出る（家賃・人件費）"
+    ]
+   ],
+   "card_size": 34,
+   "body": "まずは決算書の費用を、<br>この2つに<br>ざっくり分けます。"
+  },
+  {
+   "type": "card",
+   "pose": "pose_C",
+   "small": "ステップ ②",
+   "heading": "<span class=\"em\">限界利益率</span>を<br>出す",
+   "card_note": "架空の例：月の売上1,000万円の会社",
+   "rows": [
+    [
+     "売上",
+     "1,000万円"
+    ],
+    [
+     "変動費",
+     "600万円"
+    ],
+    [
+     "限界利益（売上−変動費）",
+     "<span class=\"em\">400万円（40%）</span>"
+    ]
+   ],
+   "body": "限界利益で、<br>固定費をまかないます。",
+   "pose_h": 380
+  },
+  {
+   "type": "card",
+   "pose": "p26",
+   "small": "ステップ ③",
+   "heading": "損益分岐点を<br><span class=\"em\">計算</span>する",
+   "card_html": "損益分岐点売上高<br>＝ 固定費 ÷ 限界利益率<br>＝ 350万円 ÷ 40%<br>＝ <span class=\"em\">875万円</span>",
+   "body": "毎月875万円売れば、<br>トントン（利益ゼロ）。"
+  },
+  {
+   "type": "card",
+   "pose": "p20",
+   "small": "ここも見る",
+   "heading": "あと<span class=\"em\">12.5%</span>で<br>赤字ライン",
+   "card_html": "安全余裕率<br>＝（売上 − 損益分岐点）÷ 売上<br>＝（1,000 − 875）÷ 1,000<br>＝ <span class=\"em\">12.5%</span>",
+   "card_size": 36,
+   "body": "売上が12.5%落ちると、<br>赤字になる計算です。"
+  },
+  {
+   "type": "card",
+   "pose": "p24",
+   "small": "固定費を増やすと",
+   "heading": "月50万円の採用で<br>分岐点は<span class=\"em\">1,000万円</span>",
+   "rows": [
+    [
+     "固定費",
+     "350万 → 400万円"
+    ],
+    [
+     "損益分岐点",
+     "875万 → <span class=\"em\">1,000万円</span>"
+    ]
+   ],
+   "body": "今の売上がそのまま<br>トントンのラインに。<br>増やす前に必ず試算を。"
+  },
+  {
+   "type": "list",
+   "pose": "p03",
+   "small": "まとめ",
+   "heading": "今日やること<br><span class=\"em\">3つ</span>",
+   "items": [
+    "費用を変動費と固定費に分ける",
+    "限界利益率を出す",
+    "固定費を増やす前に分岐点を計算"
+   ]
+  },
+  {
+   "type": "bubble",
+   "pose": "p06",
+   "bubble": "売上目標の前に、<br><span class=\"em\">損益分岐点</span>。",
+   "body": "守りのラインを知ると、<br>攻める判断も<br>速くなります。"
+  },
+  {
+   "type": "final",
+   "pose": "p48",
+   "heading": "あなたの会社の<br><span class=\"em\">安全余裕率</span>は何%？",
+   "sub": "計算してみたらコメントで教えてください",
+   "card_html": "<div style=\"font-size:28px;color:#8a8278;margin-bottom:6px\">※数字はすべて説明のための架空の例です</div>決算書診断／最新お金ニュース<br>上場会社研究／会計のはなし",
+   "button": "保存して<br>計画づくりに使う"
+  }
+ ]
+}

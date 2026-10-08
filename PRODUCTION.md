@@ -9,7 +9,7 @@
 3. 一次資料で事実を確認しながら原稿を作る（「2」「3」）
 4. `posts/<投稿ID>/post.json` と `meta.json` を書き、`python3 kit/render.py` で画像にする（「4」）
 5. 画像を自分の目で確認し、数字をPythonで検算する（「5」）
-6. 画像をコミットしてpushし、そのコミットのSHAで `python3 kit/queue.py` を実行、もう一度コミットしてpush（「6」）
+6. 画像をコミットしてpushし、そのコミットのSHAで `python3 kit/enqueue.py` を実行、もう一度コミットしてpush（「6」）
 7. 15分以内に n8n「IG自動投稿_7」が管理シートに登録し、藤山さんへ承認メールが届く。承認されると、n8n「IG自動投稿_5」が予定時刻に投稿する
 
 ## 1. シリーズとテーマ
@@ -81,7 +81,7 @@
 ```bash
 git add posts/<投稿ID> && git commit -m "<投稿ID> 画像" && git push origin main
 SHA=$(git rev-parse HEAD)
-python3 kit/queue.py $SHA <投稿ID>
+python3 kit/enqueue.py $SHA <投稿ID>
 git add queue/index.json && git commit -m "<投稿ID> 受付キューに登録" && git push origin main
 ```
 
