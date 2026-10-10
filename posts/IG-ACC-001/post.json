@@ -1,0 +1,145 @@
+{
+ "id": "IG-ACC-001",
+ "series": "accounting",
+ "title": "利益1,000万円なのにお金がない 4つの理由",
+ "slides": [
+  {
+   "type": "cover",
+   "label": "知ってる？",
+   "pose": "p42",
+   "title": [
+    {
+     "html": "利益<span style=\"font-size:170px\">1,000</span>万円",
+     "size": 110,
+     "mt": 0
+    },
+    {
+     "html": "なのに",
+     "size": 110,
+     "mt": 14
+    },
+    {
+     "html": "<span class=\"em\">お金がない</span>",
+     "size": 150,
+     "mt": 14
+    }
+   ]
+  },
+  {
+   "type": "bubble",
+   "pose": "p41",
+   "bubble": "今期は利益が<span class=\"em\">1,000万円</span>も出た。<br>なのに、通帳の残高が<br>ぜんぜん増えていない…",
+   "body": "こんな経験、<br>ありませんか？",
+   "next": "答えは次のページ →"
+  },
+  {
+   "type": "card",
+   "pose": "p47",
+   "small": "結論",
+   "heading": "<span class=\"hl\">利益</span>と<span class=\"hl\">お金</span>は<br>別もの",
+   "rows": [
+    [
+     "利益は",
+     "<span class=\"em\">会社の成績表</span>"
+    ],
+    [
+     "お金は",
+     "<span class=\"em\">財布の中身</span>"
+    ]
+   ],
+   "body": "成績が良くても、<br>財布が空になることは<br>普通に起こります。"
+  },
+  {
+   "type": "card",
+   "pose": "p09",
+   "small": "ズレる理由 ①",
+   "heading": "売上の入金が<br><span class=\"em\">まだ</span>来ていない",
+   "card_html": "売上は「売った時」に計上。<br>でも入金は1〜2か月後、<br>ということはよくあります。<br><span style=\"font-size:0.85em;color:var(--sub)\">まだ入っていない売上 ＝ 売掛金</span>",
+   "body": "売上が伸びるほど、<br><span class=\"em\">入金待ちのお金</span>も増える。"
+  },
+  {
+   "type": "card",
+   "pose": "p22",
+   "small": "ズレる理由 ②",
+   "heading": "お金が<br><span class=\"em\">在庫</span>に化けている",
+   "card_html": "仕入れた代金は払ったのに、<br>売れるまでは費用になりません。<br><span style=\"font-size:0.85em;color:var(--sub)\">棚に残った商品 ＝ 在庫（棚卸資産）</span>",
+   "body": "倉庫の中にあるのは、<br>形を変えた<span class=\"em\">現金</span>。"
+  },
+  {
+   "type": "card",
+   "pose": "p16",
+   "small": "ズレる理由 ③",
+   "heading": "借入の返済は<br><span class=\"em\">経費にならない</span>",
+   "card_html": "経費になるのは<span class=\"em\">利息だけ</span>。<br>元金の返済は、利益から<br>払っていることになります。",
+   "body": "返済が大きい会社ほど、<br>利益とお金の差が開く。"
+  },
+  {
+   "type": "card",
+   "pose": "p36",
+   "small": "ズレる理由 ④",
+   "heading": "設備の代金は<br><span class=\"em\">先に一括</span>で出ていく",
+   "card_html": "機械や車は買った年に<br>代金を払うのに、費用は<br>何年かに分けて計上します。<br><span style=\"font-size:0.85em;color:var(--sub)\">分けて費用にすること ＝ 減価償却</span>",
+   "body": "買った年は、<br>お金だけが先に減る。"
+  },
+  {
+   "type": "table",
+   "pose": "p08",
+   "flip": true,
+   "small": "たとえば、こんな会社",
+   "heading": "利益1,000万円から<br>お金の動きを追うと…",
+   "rows": [
+    [
+     "税引後の利益",
+     "1,000万円"
+    ],
+    [
+     "減価償却費（出金なし）",
+     "＋100万円"
+    ],
+    [
+     "売掛金の増加",
+     "<span class=\"em\">▲300万円</span>"
+    ],
+    [
+     "在庫の増加",
+     "<span class=\"em\">▲200万円</span>"
+    ],
+    [
+     "設備の購入",
+     "<span class=\"em\">▲300万円</span>"
+    ],
+    [
+     "借入元金の返済",
+     "<span class=\"em\">▲400万円</span>"
+    ]
+   ],
+   "total": [
+    "お金の増減",
+    "▲100万円"
+   ],
+   "src": "※説明のための架空の例です。税引後の利益で計算しています。"
+  },
+  {
+   "type": "list",
+   "pose": "p15",
+   "small": "今日からできること",
+   "heading": "毎月<span class=\"em\">この4つ</span>を<br>確認する",
+   "marker": "✓",
+   "items": [
+    "今月の利益と預金残高の増減を並べる",
+    "売掛金は予定どおり入金されたか",
+    "在庫が先月より増えていないか",
+    "返済と設備の支払い予定"
+   ],
+   "body": "数字のズレに<br><span class=\"em\">早く気づいた会社</span>が守られる。"
+  },
+  {
+   "type": "final",
+   "pose": "p31",
+   "heading": "あなたの会社は<br><span class=\"em\">どれ</span>が当てはまる？",
+   "sub": "①入金待ち ②在庫 ③返済 ④設備　番号をコメントで",
+   "card_html": "<div style=\"font-size:0.85em;color:#8a8278;margin-bottom:6px\">ほかのシリーズもどうぞ</div>決算書診断／最新お金ニュース<br>上場会社研究／会計のはなし",
+   "button": "保存して<br>決算前に見返す"
+  }
+ ]
+}

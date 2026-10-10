@@ -36,3 +36,43 @@ body{background:#777;font-family:"Zen Maru Gothic","Noto Sans CJK JP",sans-serif
 .src{position:absolute;left:64px;right:420px;bottom:34px;font-size:22px;line-height:1.5;color:#8a8278;font-weight:700;z-index:4}
 .kv{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:2px dashed #D8CFC2}
 .kv b{font-weight:900}
+
+/* ===== v2（2026-10-09）余白を減らし、文字を大きく、右上にイラスト ===== */
+.pill{top:40px;font-size:30px}
+.pg{top:46px;font-size:30px}
+.h{top:112px;right:300px;line-height:1.22}
+.h small{font-size:46px;margin-bottom:6px}
+.icon{position:absolute;right:56px;top:104px;width:210px;height:210px;border-radius:50%;background:var(--series);z-index:2;display:flex;align-items:center;justify-content:center}
+.icon svg{width:132px;height:132px}
+.zone-body{position:absolute;left:64px;font-weight:700;z-index:2;display:flex;align-items:center}
+.card{border-radius:28px}
+.src{font-size:24px}
+
+/* ===== v3（2026-10-09）さらに余白を減らす ===== */
+.pill{left:40px;top:30px}
+.pg{right:44px;top:36px}
+.h{left:44px;top:88px;right:270px;line-height:1.18}
+.h small{font-size:48px;margin-bottom:2px}
+.icon{right:40px;top:84px;width:200px;height:200px}
+.icon svg{width:128px;height:128px}
+.body{left:48px}
+.src{left:48px;bottom:24px}
+.block{left:30px;right:30px;top:96px;height:900px;border-radius:60px}
+.tag{top:36px}
+.label{top:150px}
+.title{top:248px}
+
+/* ===== v6（2026-10-09）余白の「揃え」を整える：左右56pxの共通グリッド・間隔は24/40/56の3段階 ===== */
+.pill{left:56px;top:44px;font-size:28px;padding:8px 24px}
+.pg{right:56px;top:52px;font-size:28px}
+.h{left:56px;top:124px;right:280px;line-height:1.2}
+.h small{font-size:40px;margin-bottom:12px;letter-spacing:.04em}
+.icon{right:56px;top:124px;width:176px;height:176px}
+.icon svg{width:112px;height:112px}
+.card{border-width:2px;border-radius:20px}
+.kv{padding:16px 0;gap:32px}
+.kv span{flex:none}
+.body{left:56px;padding-left:28px;border-left:8px solid var(--series)}
+.src{left:56px}
+.bubble{border-radius:40px;border-width:4px}
+.bubble::after{right:180px}

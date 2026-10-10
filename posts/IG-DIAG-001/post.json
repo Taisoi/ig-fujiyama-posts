@@ -1,0 +1,155 @@
+{
+ "id": "IG-DIAG-001",
+ "series": "diagnosis",
+ "title": "【架空事例】年商5億円の製造業A社 決算書診断",
+ "slides": [
+  {
+   "type": "cover",
+   "label": "架空事例・製造業",
+   "pose": "p01",
+   "title": [
+    {
+     "html": "年商 <span style=\"font-size:190px\">5</span><span style=\"font-size:72px\">億円</span>",
+     "size": 90,
+     "mt": 0
+    },
+    {
+     "html": "決算書",
+     "size": 150,
+     "mt": 0
+    },
+    {
+     "html": "診断します",
+     "size": 84,
+     "mt": 4
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "pose": "p02",
+   "small": "今回の会社（架空）",
+   "heading": "A社の<br>プロフィール",
+   "rows": [
+    [
+     "業種",
+     "金属部品の加工"
+    ],
+    [
+     "創業",
+     "25年"
+    ],
+    [
+     "社員",
+     "30名"
+    ],
+    [
+     "年商",
+     "5億円"
+    ],
+    [
+     "社長",
+     "2代目"
+    ]
+   ],
+   "src": "※架空の会社です。実在の企業とは関係ありません。"
+  },
+  {
+   "type": "bubble",
+   "pose": "p44",
+   "bubble": "利益はちゃんと出ているのに、<br>銀行の担当者の反応が<br>いまひとつなんです…",
+   "body": "A社の社長の悩み。<br>決算書を一緒に<br>見ていきましょう。",
+   "next": "→"
+  },
+  {
+   "type": "table",
+   "pose": "p12",
+   "small": "まずは損益計算書",
+   "heading": "1年間の<span class=\"em\">成績</span>",
+   "rows": [
+    [
+     "売上高",
+     "5億円"
+    ],
+    [
+     "売上総利益（粗利）",
+     "1億2,500万円"
+    ],
+    [
+     "販売費・一般管理費",
+     "1億500万円"
+    ],
+    [
+     "　うち減価償却費",
+     "1,000万円"
+    ],
+    [
+     "営業利益",
+     "2,000万円"
+    ],
+    [
+     "支払利息",
+     "300万円"
+    ]
+   ],
+   "total": [
+    "経常利益",
+    "1,700万円"
+   ],
+   "body": "営業利益率は<span class=\"em\">4%</span>。<br>しっかり黒字です。"
+  },
+  {
+   "type": "card",
+   "pose": "p07",
+   "small": "次に貸借対照表",
+   "heading": "決算日時点の<br><span class=\"em\">財産と借金</span>",
+   "card_html": "<div style=\"display:grid;grid-template-columns:1fr 1fr;gap:0 48px;font-size:0.92em;line-height:1.75\"><div><div style=\"color:var(--sub);font-size:0.85em\">資産</div>現預金 6,000万円<br>売掛金 9,000万円<br>在庫 7,000万円<br>固定資産 1億5,000万円<br><span class=\"em\">役員貸付金 3,000万円</span><br><b>合計 4億円</b></div><div><div style=\"color:var(--sub);font-size:0.85em\">負債・純資産</div>買掛金 5,000万円<br><span class=\"em\">借入金 2億円</span><br>その他の負債 3,000万円<br><b>純資産 1億2,000万円</b></div></div>",
+   "card_size": 42
+  },
+  {
+   "type": "card",
+   "pose": "p23",
+   "small": "チェック ①",
+   "heading": "借入金は<br>月の売上の<span class=\"em\">4.8か月分</span>",
+   "card_html": "借入金 2億円 ÷ 月の売上 約4,167万円<br>＝ <span class=\"em\" style=\"font-weight:900\">約4.8か月分</span><br><span style=\"font-size:0.85em;color:#4a4a4a\">返済にかかる年数（簡易計算）<br>（借入金 − 現預金）<br>÷（経常利益 ＋ 減価償却費）<br>＝ 1億4,000万円 ÷ 2,700万円 ＝ 約5.2年</span>",
+   "card_size": 36
+  },
+  {
+   "type": "card",
+   "pose": "p10",
+   "small": "チェック ②",
+   "heading": "<span class=\"em\">役員貸付金</span>が<br>3,000万円",
+   "card_html": "会社から社長へ貸したお金。<br>銀行は<span class=\"em\">資産として見ない</span>ことが多く、<br>純資産から差し引いて評価します。<br><span style=\"font-size:0.85em;color:#4a4a4a\">純資産 1億2,000万円 → 実質 9,000万円<br>自己資本比率 30.0% → 実質 約24.3%</span>",
+   "card_size": 38
+  },
+  {
+   "type": "card",
+   "pose": "p11",
+   "small": "チェック ③",
+   "heading": "お金が<span class=\"em\">売掛金と在庫</span>で<br>眠っている",
+   "card_html": "売掛金 9,000万円 ＋ 在庫 7,000万円<br>− 買掛金 5,000万円<br>＝ <span class=\"em\" style=\"font-weight:900\">1億1,000万円</span><br><span style=\"font-size:0.85em;color:#4a4a4a\">月の売上の約2.6か月分が、<br>入金待ちと棚の上にある状態です。</span>",
+   "card_size": 38
+  },
+  {
+   "type": "list",
+   "pose": "p28",
+   "small": "フジヤマの診断",
+   "heading": "利益より<span class=\"em\">お金の置き場所</span><br>に課題あり",
+   "items": [
+    "役員貸付金の返済計画をつくる",
+    "入金条件と在庫の量を見直す",
+    "浮いたお金で借入を圧縮する"
+   ],
+   "body": "稼ぐ力はある会社。<br><span class=\"em\">お金の流れ</span>を整えれば<br>評価は変わる。"
+  },
+  {
+   "type": "final",
+   "pose": "p48",
+   "heading": "あなたの会社の決算書、<br><span class=\"em\">3つ</span>チェックしてみて",
+   "sub": "診断してほしいテーマをコメントで教えてください",
+   "card_html": "① 借入金は月の売上の何か月分？<br>② 役員貸付金はいくら？<br>③ 売掛金＋在庫−買掛金は？",
+   "button": "保存して<br>決算前に見返す",
+   "note": "※本投稿は架空事例です"
+  }
+ ]
+}
