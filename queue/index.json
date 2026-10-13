@@ -48,7 +48,7 @@
    "check": "数字は一次資料と照合済み（2026-10-09）。画像のはみ出し・重なり検査済み",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-NEWS-001/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/640882b63abb95dd27cbcf8f53e18701b495f403/posts/IG-NEWS-001/"
   },
   {
    "id": "IG-REEL-20261014",
@@ -70,7 +70,7 @@
    "reel_seconds": 48.6,
    "reel_voice": true,
    "reel_script": "1. 今期は利益が1,000万円出た。なのに、通帳の残高が増えていない。\n2. 結論から言うと、利益は会社の成績表、お金は財布の中身です。\n3. ひとつ目。売上は計上したのに、入金がまだ来ていない。\n4. ふたつ目。払ったお金が、売れ残りの在庫に化けている。\n5. みっつ目。借入の元金返済は、経費になりません。\n6. よっつ目。設備の代金は、先に一括で出ていきます。\n7. 毎月、利益と預金残高の増減を並べるだけで、ズレに早く気づけます。\n8. 4つの理由の図解は、プロフィールの投稿で。保存して、決算前に見返してください。",
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-REEL-20261014/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/640882b63abb95dd27cbcf8f53e18701b495f403/posts/IG-REEL-20261014/"
   },
   {
    "id": "IG-DIAG-001",
@@ -81,14 +81,14 @@
    "title": "【架空事例】年商5億円の製造業A社 決算書診断",
    "angle": "利益は出ているのに銀行の反応が悪い理由を、借入金の月商倍率・役員貸付金・運転資本の3点で診断",
    "sources": "架空事例（実在の企業とは関係ありません）。指標の計算はすべて投稿内の架空の数字から算出",
-   "poses": "p01,p02,p44,p12,p07,p23,p10,p11,p28,p48",
+   "poses": "p01,p34,p44,p12,p07,p23,p10,p11,p28,p48",
    "n": 10,
    "caption": "【架空事例】年商5億円・金属部品加工のA社の決算書を診断しました。\n\n利益は出ている。なのに、銀行の反応がいまひとつ。\n決算書を見ると、理由が3つ見えてきます。\n\n①借入金が月の売上の約4.8か月分\n②役員貸付金が3,000万円（銀行は資産として見ないことが多い）\n③売掛金と在庫に、お金が約1億1,000万円眠っている\n\n稼ぐ力はある会社。\nお金の流れを整えれば、評価は変わります。\n\nあなたの会社でも、この3つをチェックしてみてください。\n診断してほしいテーマは、コメントで教えてください。\n\n※本投稿は架空の事例です。実在の企業とは関係ありません。",
    "hashtags": "#フジヤマの決算書診断 #決算書 #銀行融資 #資金繰り #経営者",
    "check": "数字は一次資料と照合済み（2026-10-09）。画像のはみ出し・重なり検査済み",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-DIAG-001/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/640882b63abb95dd27cbcf8f53e18701b495f403/posts/IG-DIAG-001/"
   },
   {
    "id": "IG-LISTED-20261017",
@@ -99,7 +99,7 @@
    "title": "ワークマン 増益なのに営業キャッシュフローは減った",
    "angle": "2026年3月期は2ケタ増益なのに営業CFは248億→188億円。在庫の増加（▲58億円）を手がかりに「利益とお金のズレ」を学ぶ",
    "sources": "株式会社ワークマン 2026年3月期 決算短信〔日本基準〕（非連結）2026年5月11日 https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260511/20260511521460.pdf",
-   "poses": "p22,p44,p13,p35,p11,p07,p15,p28,p31",
+   "poses": "p22,p44,p13,p34,p11,p07,p15,p28,p31",
    "n": 9,
    "caption": "利益が増えたのに、本業で入ってきたお金は減っていました。\n\nワークマンの2026年3月期（非連結）。\n・営業総収入1,609億円（＋17.5%）、営業利益297億円（＋21.7%）\n・PB商品の売上構成比は71.9%\n・それでも営業キャッシュ・フローは248億円→188億円（▲24%）\n・ズレの大きな要因のひとつは在庫の増加（営業CF上▲58億円）\n\n利益は成績、お金は体力。\n伸びている年ほど、利益と営業CF、在庫の増え方をセットで確認してください。\n\n次に分解してほしい会社があれば、コメントで教えてください。\n保存して、自社の決算前に見返すのもおすすめです。\n\n出典：株式会社ワークマン 2026年3月期 決算短信（2026年5月11日）\n※億円未満四捨五入\n※特定の銘柄の売買をすすめるものではありません。",
    "hashtags": "#フジヤマの上場会社研究 #ワークマン #キャッシュフロー #決算書の読み方 #経営者",
@@ -108,7 +108,7 @@
    "memo": "",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-LISTED-20261017/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/640882b63abb95dd27cbcf8f53e18701b495f403/posts/IG-LISTED-20261017/"
   },
   {
    "id": "IG-ACC-20261019",
@@ -128,7 +128,7 @@
    "memo": "",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-ACC-20261019/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/640882b63abb95dd27cbcf8f53e18701b495f403/posts/IG-ACC-20261019/"
   },
   {
    "id": "IG-NEWS-20261020",
@@ -148,7 +148,7 @@
    "memo": "",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-NEWS-20261020/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/640882b63abb95dd27cbcf8f53e18701b495f403/posts/IG-NEWS-20261020/"
   },
   {
    "id": "IG-DIAG-20261022",
@@ -159,7 +159,7 @@
    "title": "【架空事例】年商1.2億円 飲食店B社 決算書診断",
    "angle": "黒字なのにお金が減る飲食店を、返済原資（利益＋減価償却費）と元金返済の比較、債務償還年数で診断する",
    "sources": "（架空事例のため外部資料なし。債務償還年数は簡易計算式で表示）",
-   "poses": "p01,p02,p41,p34,p36,p23,p05,p28,p04",
+   "poses": "p01,p32,p41,p34,p36,p23,p05,p28,p04",
    "n": 9,
    "caption": "【架空事例】黒字なのに、毎年お金が減っていく飲食店。\n\n年商1.2億円・3店舗のB社（架空）を診断しました。\n・返済に使えるお金の目安は、税引後利益300万円＋減価償却費400万円＝年700万円\n・元金返済は月80万円＝年960万円\n・差し引き▲260万円が、毎年手元のお金から出ていく\n・借入を返し終えるのに約7.1年（（6,000万−1,000万）÷700万）\n\n処方箋は3つ。\n①返済期間を延ばす借り換えを銀行に相談\n②設備投資は返済原資の範囲で\n③利益を月約22万円増やす計画を立てる\n\nあなたの会社も「利益＋減価償却費」と「年間の元金返済」を並べてみてください。\n診断してほしいテーマは、コメントで教えてください。\n\n※本投稿は架空事例です。実在の企業とは関係ありません。",
    "hashtags": "#フジヤマの決算書診断 #資金繰り #借入返済 #飲食店経営 #経営者",
@@ -168,7 +168,7 @@
    "memo": "",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-DIAG-20261022/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/640882b63abb95dd27cbcf8f53e18701b495f403/posts/IG-DIAG-20261022/"
   }
  ]
 }
