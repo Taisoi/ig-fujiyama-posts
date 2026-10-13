@@ -6,7 +6,23 @@
 import asyncio, json
 from pathlib import Path
 
-from render import KIT, ROOT, SERIES, ICONS, pose_profile  # noqa: F401  （同じフォルダの描画部品を再利用）
+ROOT = Path(__file__).resolve().parent.parent
+KIT = ROOT / "kit"
+# カルーセル側（render.py）のシリーズ色・アイコンを使う。render.py の作り替えで読めなくなっても動くように控えを持つ
+SERIES = {
+    "diagnosis": ("決算書診断", "#フジヤマの決算書診断", "#CDD2BC"),
+    "news": ("最新お金ニュース", "#フジヤマの最新お金ニュース", "#C6CDDA"),
+    "listed": ("上場会社研究", "#フジヤマの上場会社研究", "#E3D9B6"),
+    "accounting": ("会計のはなし", "#フジヤマの会計のはなし", "#E5CDBC"),
+    "failure": ("フジヤマの失敗談", "#フジヤマの失敗談", "#D9CBC4"),
+}
+ICONS = {}
+try:
+    import render as _r
+    SERIES = getattr(_r, "SERIES", SERIES)
+    ICONS = getattr(_r, "ICONS", ICONS)
+except Exception:
+    pass
 
 W, H = 1080, 1920
 
