@@ -25,16 +25,16 @@ SR = 48000
 def scene(i, s, series, n):
     """全シーン同じ位置・同じ大きさで描く（シーンが変わっても文字・字幕・人物の位置が動かないように）"""
     pill, tag, _ = SERIES[series]
-    small = f'<div class="z mid fit" data-maxw="968" style="left:56px;right:56px;top:372px;font-size:48px;color:var(--sub)">{s["small"]}</div>' if s.get("small") else ""
-    big = (f'<div class="z" style="left:56px;right:56px;top:440px;height:380px;display:flex;align-items:center">'
-           f'<div class="big fit" data-maxw="968" style="position:static;font-size:{s.get("size", 120)}px">{s["text"]}</div></div>')
-    sub = (f'<div class="z sub" style="left:56px;right:56px;top:872px;font-size:42px;white-space:normal;text-align:left;line-break:strict">{s["caption"]}</div>'
+    small = f'<div class="z mid fit" data-maxw="888" style="top:424px;font-size:46px;color:var(--sub)">{s["small"]}</div>' if s.get("small") else ""
+    big = (f'<div class="z" style="left:96px;right:96px;top:488px;height:332px;display:flex;align-items:center">'
+           f'<div class="big fit" data-maxw="888" style="position:static;font-size:{s.get("size", 116)}px">{s["text"]}</div></div>')
+    sub = (f'<div class="z sub" style="left:40px;right:40px;top:904px;padding:24px 56px;font-size:42px;white-space:normal;text-align:left;line-break:strict">{s["caption"]}</div>'
            if s.get("caption") else "")
     name = '<div class="name" style="bottom:400px"><small>熱血会計おじさん</small><b>フジヤマ</b></div>' if i == 1 else ""
-    return (f'<section class="v fixed" id="v{i}"><div class="z tag" style="right:56px"><i>{tag}</i></div>'
-            f'<div class="icon" style="right:56px">{ICONS.get(series, "")}</div>'
-            f'<div class="blk" style="height:520px"></div>{small}{big}{sub}'
-            f'{person(s["pose"], 860, "anchor", s.get("flip", False))}{name}</section>')
+    return (f'<section class="v fixed st" id="v{i}"><div class="z tag"><i>{tag}</i></div>'
+            f'<div class="icon">{ICONS.get(series, "")}</div>'
+            f'<div class="blk" style="height:500px"></div>{small}{big}{sub}'
+            f'{person(s["pose"], 820, "anchor", s.get("flip", False))}{name}</section>')
 
 
 def wrap_caption(t):

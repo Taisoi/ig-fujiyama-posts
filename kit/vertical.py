@@ -50,11 +50,15 @@ body{background:#777;font-family:"Zen Maru Gothic","Noto Sans CJK JP",sans-serif
 .icon{position:absolute;right:150px;top:236px;width:120px;height:120px;border-radius:50%;background:var(--series);z-index:2;display:flex;align-items:center;justify-content:center}
 .icon svg{width:76px;height:76px}
 .sub{left:56px;right:140px;background:rgba(30,43,72,.92);color:#fff;font-size:46px;font-weight:700;line-height:1.5;padding:22px 30px;border-radius:16px;white-space:nowrap;text-align:center}
-.st .tag{left:80px;right:220px;top:250px}
-.st .icon{right:80px;top:228px;width:108px;height:108px}
-.st .blk{top:372px;left:40px;right:40px;border-radius:48px}
-.st .big,.st .mid{left:80px;right:80px}
-.st .name{left:80px}
+.st .tag{left:96px;right:240px;top:250px}
+.st .icon{right:96px;top:226px;width:108px;height:108px}
+.st .blk{top:372px;left:40px;right:40px;border-radius:40px}
+.st .big,.st .mid{left:96px;right:96px}
+.st .name{left:96px}
+.st .card{border-radius:24px}
+.st .btn{border-radius:20px}
+.st .sub{border-radius:24px}
+.st img.person{z-index:0}
 .btn{background:var(--navy);color:#fff;font-size:44px;font-weight:900;padding:22px 34px;border-radius:14px;text-align:center;line-height:1.4}
 """
 
@@ -87,6 +91,9 @@ FIT_JS = r"""
     if (blk && y !== null) { const bt = blk.getBoundingClientRect().top - top; blk.style.height = Math.max(200, y - bt) + 'px'; }
     const p = sec.querySelector('img.person');
     const lastText = [...sec.querySelectorAll('.stack, .sub')].map(e => e.getBoundingClientRect().bottom - top).reduce((a, b) => Math.max(a, b), 0);
+    if (p && p.dataset.lock && blk) {  // 大きさは変えず、色ブロックにかかるときだけ人物を少し下げる
+      const bb = blk.getBoundingClientRect().bottom - top, pt = 1920 - parseFloat(p.dataset.h);
+      if (bb + 24 > pt) p.style.bottom = (pt - bb - 24) + 'px'; }
     if (p && !p.dataset.lock) { const room = 1920 - lastText - 10; const h = Math.min(parseFloat(p.dataset.h), room);
       p.style.height = Math.max(520, h) + 'px'; }
     if (lastText > 1920 - 340) warn.push(`${i + 1}枚目: 文字が下の表示エリア（下340px）にかかっています`);
