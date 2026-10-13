@@ -7,7 +7,7 @@
 1. 今日の日付と曜日を確認する（bashで `TZ=Asia/Tokyo date`。暗算しない）
 2. 曜日でシリーズを決め、テーマを選ぶ（下の「1」）
 3. 一次資料で事実を確認しながら原稿を作る（「2」「3」）
-4. `posts/<投稿ID>/post.json` と `meta.json` を書き、`python3 kit/render.py` で画像にする（「4」）
+4. `posts/<投稿ID>/post.json` と `meta.json` を書き、`python3 kit/render.py` で画像にする（「4」）。あわせてストーリーズ3枚（`story.json` → `python3 kit/render_story.py`）も作る（「7」）
 5. 画像を自分の目で確認し、数字をPythonで検算する（「5」）
 6. 画像をコミットしてpushし、そのコミットのSHAで `python3 kit/enqueue.py` を実行、もう一度コミットしてpush（「6」）
 7. 15分以内に n8n「IG自動投稿_7」が管理シートに登録し、藤山さんへ承認メールが届く。承認されると、n8n「IG自動投稿_5」が予定時刻に投稿する
@@ -88,11 +88,34 @@ python3 kit/enqueue.py $SHA <投稿ID>
 git add queue/index.json && git commit -m "<投稿ID> 受付キューに登録" && git push origin main
 ```
 
-- 投稿IDの形式：`IG-<シリーズ>-<YYYYMMDD>`（例：IG-NEWS-20261020）。シリーズは ACC / NEWS / DIAG / LISTED
+- 投稿IDの形式：`IG-<シリーズ>-<YYYYMMDD>`（例：IG-NEWS-20261020）。シリーズは ACC / NEWS / DIAG / LISTED、リールは REEL
 - 同じ投稿IDで画像を作り直したときも、同じ手順で再登録する（管理シートの行が更新され、承認メールが再送される）
 - 管理シート「企画」の操作や、承認・投稿の操作は、定時タスクからは行わない
 
-## 7. 最後に必ず出すもの（定時タスクの結果として）
+## 7. ストーリーズ（毎回・フィード投稿とセット）
+
+- 形式は `kit/STORY_REEL_SPEC.md`。posts/<投稿ID>/story.json を書き、`python3 kit/render_story.py posts/<投稿ID>/story.json`
+- story_report.json の warnings を空にし、story_contact.png を自分の目で見て確認する
+- 画像（story_1〜3.jpg）は投稿フォルダに一緒に置き、「6」の手順でまとめて登録する（enqueue.py が枚数を自動で記録）
+- 承認メールにカルーセルと一緒に表示され、承認するとフィード投稿の直後にストーリーズも投稿される
+
+## 8. リール（毎週水曜20:00）
+
+- 投稿ID：`IG-REEL-<水曜のYYYYMMDD>`。その週の月曜「会計のはなし」（IG-ACC-<月曜>）の内容を、30〜45秒の動画にする
+- 作るタイミング：火曜か水曜の朝の実行で、IG-ACC-<その週の月曜> があり、IG-REEL-<その週の水曜> がまだ無いとき（カルーセルの制作とは別に作る）
+- 手順
+  1. posts/IG-REEL-<日付>/reel.json を書く（形式は `kit/STORY_REEL_SPEC.md`）。数字・事実は元のカルーセルと一致させる
+  2. ナレーション：n8n MCP の execute_workflow で「IG自動投稿_9_リール音声（フジヤマ声）」（workflowId i2jeckXwfkTzDO6y）を実行する
+     - executionMode: "production"、triggerNodeName: "Webhook_ReelVoice"
+     - inputs: {"webhookData":{"method":"POST","body":{"token":"rv_9Qm2Lx7Tz4Kc8Wn5","id":"<投稿ID>","lines":[各シーンの say を順に]}}}
+  3. 30秒ほど待って get_workflow_execution で status が success になったら、includeData: true、nodeNames: ["Code_WavBase64"] で結果を取得する。結果は大きいのでファイルに保存される。そのパスを使って
+     `python3 kit/voice_from_n8n.py <保存されたファイル> posts/<投稿ID>` → voice/01.wav …
+  4. `python3 kit/render_reel.py posts/<投稿ID>/reel.json` → reel.mp4（声つき）。reel_report.json の warnings を空にし、reel_contact.png と動画の途中のコマ（`ffmpeg -ss 5 -i reel.mp4 -frames:v 1 x.jpg`）を目で見て確認する
+     - 声の生成が失敗したときは、voice フォルダが無い状態で描画すればBGMと字幕だけの動画になる。その場合は meta.json の memo に「声なし（理由）」と書く
+  5. meta.json に `"kind":"reel"`、date（水曜）・time（20:00）・series（会計のはなし）・title・caption・hashtags（#フジヤマの会計のはなし を先頭）・sources・poses を書き、「6」と同じ手順で登録する（voice フォルダもコミットしてよい）
+- 承認メールには表紙画像と動画のリンクが届く。承認すると水曜20:05にリールとして投稿される（フィードにも表示）
+
+## 9. 最後に必ず出すもの（定時タスクの結果として）
 
 - 投稿ID・タイトル・投稿予定日時
 - 使った一次資料
