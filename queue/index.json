@@ -66,10 +66,11 @@
    "check": "元の投稿（IG-ACC-001）と内容・数字が一致していることを確認。ナレーションはフジヤマの登録音声（TAISEI Voice）。動画48.6秒・1080x1920・H.264/AAC。Instagram側の受け取り確認（コンテナ作成のみ・非公開）で FINISHED を確認済み",
    "memo": "リール初回。BGMは自作の音（著作権の心配なし）",
    "kind": "reel",
+   "story_n": 2,
    "reel_seconds": 48.6,
    "reel_voice": true,
    "reel_script": "1. 今期は利益が1,000万円出た。なのに、通帳の残高が増えていない。\n2. 結論から言うと、利益は会社の成績表、お金は財布の中身です。\n3. ひとつ目。売上は計上したのに、入金がまだ来ていない。\n4. ふたつ目。払ったお金が、売れ残りの在庫に化けている。\n5. みっつ目。借入の元金返済は、経費になりません。\n6. よっつ目。設備の代金は、先に一括で出ていきます。\n7. 毎月、利益と預金残高の増減を並べるだけで、ズレに早く気づけます。\n8. 4つの理由の図解は、プロフィールの投稿で。保存して、決算前に見返してください。",
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/1490ae8803d79dcfa7e341154ec18f527dd7a194/posts/IG-REEL-20261014/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/449ff30ab95a4cb8c248f411af6bd33394563e62/posts/IG-REEL-20261014/"
   },
   {
    "id": "IG-DIAG-001",
