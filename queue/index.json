@@ -48,7 +48,7 @@
    "check": "数字は一次資料と照合済み（2026-10-09）。画像のはみ出し・重なり検査済み",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/f40ba0f81924e1553bb70299b7d33c97f0a38112/posts/IG-NEWS-001/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-NEWS-001/"
   },
   {
    "id": "IG-REEL-20261014",
@@ -70,7 +70,7 @@
    "reel_seconds": 48.6,
    "reel_voice": true,
    "reel_script": "1. 今期は利益が1,000万円出た。なのに、通帳の残高が増えていない。\n2. 結論から言うと、利益は会社の成績表、お金は財布の中身です。\n3. ひとつ目。売上は計上したのに、入金がまだ来ていない。\n4. ふたつ目。払ったお金が、売れ残りの在庫に化けている。\n5. みっつ目。借入の元金返済は、経費になりません。\n6. よっつ目。設備の代金は、先に一括で出ていきます。\n7. 毎月、利益と預金残高の増減を並べるだけで、ズレに早く気づけます。\n8. 4つの理由の図解は、プロフィールの投稿で。保存して、決算前に見返してください。",
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/f40ba0f81924e1553bb70299b7d33c97f0a38112/posts/IG-REEL-20261014/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-REEL-20261014/"
   },
   {
    "id": "IG-DIAG-001",
@@ -88,7 +88,7 @@
    "check": "数字は一次資料と照合済み（2026-10-09）。画像のはみ出し・重なり検査済み",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/f40ba0f81924e1553bb70299b7d33c97f0a38112/posts/IG-DIAG-001/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-DIAG-001/"
   },
   {
    "id": "IG-LISTED-20261017",
@@ -108,7 +108,7 @@
    "memo": "",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/f40ba0f81924e1553bb70299b7d33c97f0a38112/posts/IG-LISTED-20261017/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-LISTED-20261017/"
   },
   {
    "id": "IG-ACC-20261019",
@@ -128,7 +128,7 @@
    "memo": "",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/f40ba0f81924e1553bb70299b7d33c97f0a38112/posts/IG-ACC-20261019/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-ACC-20261019/"
   },
   {
    "id": "IG-NEWS-20261020",
@@ -148,7 +148,7 @@
    "memo": "",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/f40ba0f81924e1553bb70299b7d33c97f0a38112/posts/IG-NEWS-20261020/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-NEWS-20261020/"
   },
   {
    "id": "IG-DIAG-20261022",
@@ -168,7 +168,7 @@
    "memo": "",
    "kind": "carousel",
    "story_n": 3,
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/f40ba0f81924e1553bb70299b7d33c97f0a38112/posts/IG-DIAG-20261022/"
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5c275b138cc96938f7e062cdc2b48708c1515adb/posts/IG-DIAG-20261022/"
   }
  ]
 }
