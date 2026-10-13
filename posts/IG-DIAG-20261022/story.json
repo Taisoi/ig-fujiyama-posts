@@ -1,0 +1,33 @@
+{
+ "id": "IG-DIAG-20261022",
+ "series": "diagnosis",
+ "frames": [
+  {
+   "type": "ask",
+   "label": "今日の投稿【架空事例】",
+   "pose": "n26",
+   "title": "黒字なのに<br>毎年<span class=\"em\">お金が減る</span>",
+   "sub": "飲食店B社の<span class=\"em\">決算書診断</span>"
+  },
+  {
+   "type": "points",
+   "pose": "n11",
+   "heading": "原因は<br><span class=\"em\">返済のバランス</span>",
+   "items": [
+    "返済に使えるお金は年700万円",
+    "元金返済は年960万円",
+    "差し引き▲260万円"
+   ]
+  },
+  {
+   "type": "cta",
+   "pose": "n16",
+   "heading": "処方箋は<br><span class=\"em\">最新の投稿</span>で",
+   "lines": [
+    "自社の数字も並べてみる",
+    "相談はプロフィールのLINEから"
+   ],
+   "button": "プロフィールから<br>最新投稿をチェック"
+  }
+ ]
+}

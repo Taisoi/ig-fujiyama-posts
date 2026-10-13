@@ -1,0 +1,33 @@
+{
+ "id": "IG-NEWS-20261020",
+ "series": "news",
+ "frames": [
+  {
+   "type": "ask",
+   "label": "今日の投稿",
+   "pose": "n45",
+   "title": "政策金利<br><span class=\"em\">1.25%程度</span>へ",
+   "sub": "借入の利息、<span class=\"em\">試算</span>しましたか？"
+  },
+  {
+   "type": "points",
+   "pose": "n11",
+   "heading": "社長が今やる<br><span class=\"em\">3つ</span>",
+   "items": [
+    "借入を変動・固定で一覧に",
+    "利息の増え方を試算",
+    "資金繰り表を持って相談"
+   ]
+  },
+  {
+   "type": "cta",
+   "pose": "n19",
+   "heading": "試算のしかたは<br><span class=\"em\">最新の投稿</span>で",
+   "lines": [
+    "保存して銀行面談の前に",
+    "相談はプロフィールのLINEから"
+   ],
+   "button": "プロフィールから<br>最新投稿をチェック"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "id": "IG-DIAG-001",
+ "series": "diagnosis",
+ "frames": [
+  {
+   "type": "ask",
+   "label": "今日の投稿【架空事例】",
+   "pose": "n48",
+   "title": "利益は出てるのに<br>銀行の反応が<span class=\"em\">微妙</span>",
+   "sub": "年商5億円A社の<span class=\"em\">決算書診断</span>"
+  },
+  {
+   "type": "points",
+   "pose": "n11",
+   "heading": "見えた課題は<br><span class=\"em\">3つ</span>",
+   "items": [
+    "借入は月商の4.8か月分",
+    "役員貸付金が3,000万円",
+    "売掛金と在庫にお金が眠る"
+   ]
+  },
+  {
+   "type": "cta",
+   "pose": "n16",
+   "heading": "診断の続きは<br><span class=\"em\">最新の投稿</span>で",
+   "lines": [
+    "自社の決算書でもチェック",
+    "相談はプロフィールのLINEから"
+   ],
+   "button": "プロフィールから<br>最新投稿をチェック"
+  }
+ ]
+}

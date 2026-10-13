@@ -1,0 +1,33 @@
+{
+ "id": "IG-ACC-20261019",
+ "series": "accounting",
+ "frames": [
+  {
+   "type": "ask",
+   "label": "今日の投稿",
+   "pose": "n06",
+   "title": "あと<span class=\"em\">いくら</span>売れば<br>黒字になる？",
+   "sub": "答えは<span class=\"em\">損益分岐点</span>で出せます"
+  },
+  {
+   "type": "points",
+   "pose": "n11",
+   "heading": "出し方は<br><span class=\"em\">3ステップ</span>",
+   "items": [
+    "費用を変動費と固定費に分ける",
+    "限界利益率を出す",
+    "固定費 ÷ 限界利益率"
+   ]
+  },
+  {
+   "type": "cta",
+   "pose": "n02",
+   "heading": "計算例は<br><span class=\"em\">最新の投稿</span>で",
+   "lines": [
+    "保存して計画づくりに",
+    "相談はプロフィールのLINEから"
+   ],
+   "button": "プロフィールから<br>最新投稿をチェック"
+  }
+ ]
+}

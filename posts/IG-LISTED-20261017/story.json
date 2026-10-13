@@ -1,0 +1,33 @@
+{
+ "id": "IG-LISTED-20261017",
+ "series": "listed",
+ "frames": [
+  {
+   "type": "ask",
+   "label": "今日の投稿",
+   "pose": "n27",
+   "title": "ワークマン<br>増益なのに<span class=\"em\">お金は減った</span>？",
+   "sub": "営業CFは<span class=\"em\">248億→188億円</span>"
+  },
+  {
+   "type": "points",
+   "pose": "n11",
+   "heading": "増益の年こそ<br><span class=\"em\">3つ</span>を確認",
+   "items": [
+    "利益と営業CFをセットで見る",
+    "在庫の増え方を見る",
+    "仕入れと売れ行きを照合"
+   ]
+  },
+  {
+   "type": "cta",
+   "pose": "n14",
+   "heading": "分解の続きは<br><span class=\"em\">最新の投稿</span>で",
+   "lines": [
+    "出典：2026年3月期 決算短信",
+    "売買の推奨ではありません"
+   ],
+   "button": "プロフィールから<br>最新投稿をチェック"
+  }
+ ]
+}
