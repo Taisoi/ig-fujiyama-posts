@@ -1,3 +1,5 @@
 node_modules/
 __pycache__/
 posts/*/slides.html
+posts/*/story.html
+posts/*/_reel/
