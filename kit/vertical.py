@@ -67,6 +67,11 @@ FIT_JS = r"""
   // 縦の重なり：.stack の要素を上から順に並べる
   document.querySelectorAll('section.v').forEach((sec, i) => {
     const top = sec.getBoundingClientRect().top;
+    if (sec.classList.contains('fixed')) {  // リール：位置は固定。字幕が人物の頭や下の表示エリアにかからないかだけ確かめる
+      const sub = sec.querySelector('.sub'), p = sec.querySelector('img.person');
+      if (sub && p && sub.getBoundingClientRect().bottom - top > p.getBoundingClientRect().top - top + 30) warn.push(`${i + 1}枚目: 字幕が長すぎて人物にかかっています（2行以内に）`);
+      return;
+    }
     let y = null;
     sec.querySelectorAll('.stack').forEach(el => {
       if (y === null) { y = el.getBoundingClientRect().top - top; }
@@ -97,6 +102,9 @@ def person(pose, h=900, pos="right", flip=False):
     if not p.exists():
         raise SystemExit(f"ポーズがありません: {pose}")
     tf = "transform:scaleX(-1);" if flip else ""
+    if pos == "anchor":  # 体の中心を x=760 に固定（ポーズの横幅が違っても顔の位置がそろう）
+        return (f'<img class="person" data-pose="{pose}" data-h="{h}" src="{p.as_uri()}" '
+                f'style="left:760px;transform:translateX(-50%){" scaleX(-1)" if flip else ""};height:{h}px">')
     side = {"right": "right:60px;", "left": "left:20px;", "center": "left:50%;transform:translateX(-50%);"}[pos]
     if pos == "center" and flip:
         side = "left:50%;transform:translateX(-50%) scaleX(-1);"

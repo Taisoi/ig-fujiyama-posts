@@ -23,16 +23,30 @@ SR = 48000
 
 
 def scene(i, s, series, n):
+    """全シーン同じ位置・同じ大きさで描く（シーンが変わっても文字・字幕・人物の位置が動かないように）"""
     pill, tag, _ = SERIES[series]
-    small = f'<div class="z mid fit stack" style="top:380px;font-size:48px;color:var(--sub)" data-gap="24">{s["small"]}</div>' if s.get("small") else ""
-    first = "" if small else 'top:380px;'
-    big = f'<div class="z big fit stack" style="{first}font-size:{s.get("size", 120)}px" data-gap="48">{s["text"]}</div>'
-    sub = f'<div class="z sub stack" style="font-size:46px;white-space:normal;text-align:left">{s["caption"]}</div>' if s.get("caption") else ""
+    small = f'<div class="z mid fit" data-maxw="968" style="left:56px;right:56px;top:372px;font-size:48px;color:var(--sub)">{s["small"]}</div>' if s.get("small") else ""
+    big = (f'<div class="z" style="left:56px;right:56px;top:440px;height:380px;display:flex;align-items:center">'
+           f'<div class="big fit" data-maxw="968" style="position:static;font-size:{s.get("size", 120)}px">{s["text"]}</div></div>')
+    sub = (f'<div class="z sub" style="left:56px;right:56px;top:872px;font-size:42px;white-space:normal;text-align:left;line-break:strict">{s["caption"]}</div>'
+           if s.get("caption") else "")
     name = '<div class="name" style="bottom:400px"><small>熱血会計おじさん</small><b>フジヤマ</b></div>' if i == 1 else ""
-    bg = "" if i in (1, n) else ' style="background:#F2EEE7"'
-    blk = '<div class="blk"></div>' if i in (1, n) else ""
-    return (f'<section class="v" id="v{i}"{bg}><div class="z tag"><i>{tag}</i></div><div class="icon">{ICONS.get(series, "")}</div>'
-            f'{blk}{small}{big}{sub}{person(s["pose"], 1000, s.get("pos", "right"), s.get("flip", False))}{name}</section>')
+    return (f'<section class="v fixed" id="v{i}"><div class="z tag" style="right:56px"><i>{tag}</i></div>'
+            f'<div class="icon" style="right:56px">{ICONS.get(series, "")}</div>'
+            f'<div class="blk" style="height:520px"></div>{small}{big}{sub}'
+            f'{person(s["pose"], 860, "anchor", s.get("flip", False))}{name}</section>')
+
+
+def wrap_caption(t):
+    """字幕は句読点の位置で2行に分ける（単語の途中で折り返さないように）"""
+    if "<br>" in t or len(t) <= 20:
+        return t
+    mid = len(t) / 2
+    cands = [k + 1 for k, ch in enumerate(t[:-1]) if ch in "、。？！"]
+    if not cands:
+        return t
+    k = min(cands, key=lambda x: abs(x - mid))
+    return t[:k] + "<br>" + t[k:]
 
 
 def wav_seconds(p):
@@ -102,7 +116,7 @@ async def main(spec_path):
     work = out / "_reel"
     work.mkdir(exist_ok=True)
     for i, s in enumerate(scenes):
-        s.setdefault("caption", s.get("say", ""))
+        s.setdefault("caption", wrap_caption(s.get("say", "")))
     html = doc([scene(i + 1, s, spec["series"], n) for i, s in enumerate(scenes)], spec["series"])
     (work / "reel.html").write_text(html)
     imgs = [str(work / f"s{i + 1:02d}.jpg") for i in range(n)]
@@ -125,8 +139,8 @@ async def main(spec_path):
     clips = []
     for i, (img, d) in enumerate(zip(imgs, durs)):
         c = work / f"c{i + 1:02d}.mp4"
-        z = 0.035
-        vf = (f"scale=w='trunc(1080*(1+{z}*t/{d})/2)*2':h=-2:eval=frame,crop=1080:1920,setsar=1,fps={FPS},format=yuv420p")
+        # 画面は動かさない（拡大の動きは1〜2pxずつ段差が出て「ズレ」に見えるため使わない）。切り替えはクロスフェードだけ
+        vf = f"scale=1080:1920,setsar=1,fps={FPS},format=yuv420p"
         run(["ffmpeg", "-y", "-loop", "1", "-t", str(d), "-i", img, "-vf", vf, "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", str(c)])
         clips.append(c)
     if n == 1:
