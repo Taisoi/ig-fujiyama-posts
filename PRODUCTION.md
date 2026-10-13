@@ -14,6 +14,8 @@
 
 ## 1. シリーズとテーマ
 
+全体の方針（フィード・リール・ストーリーズの役割分担）は `kit/STRATEGY.md`。必ず先に読む。
+
 投稿日と時刻：月・火・木・土の20:00（JST）。定時タスクは投稿日の朝に、その日の分を1本作る。
 
 | 曜日 | シリーズ | series値 | ハッシュタグ（必ず先頭） |
@@ -99,10 +101,13 @@ git add queue/index.json && git commit -m "<投稿ID> 受付キューに登録" 
 - 画像（story_1〜3.jpg）は投稿フォルダに一緒に置き、「6」の手順でまとめて登録する（enqueue.py が枚数を自動で記録）
 - 承認メールにカルーセルと一緒に表示され、承認するとフィード投稿の直後にストーリーズも投稿される
 
-## 8. リール（毎週水曜20:00）
+## 8. リール（毎週 水・日 20:00）
 
-- 投稿ID：`IG-REEL-<水曜のYYYYMMDD>`。その週の月曜「会計のはなし」（IG-ACC-<月曜>）の内容を、30〜45秒の動画にする
-- 作るタイミング：火曜か水曜の朝の実行で、IG-ACC-<その週の月曜> があり、IG-REEL-<その週の水曜> がまだ無いとき（カルーセルの制作とは別に作る）
+- 投稿ID：`IG-REEL-<投稿日のYYYYMMDD>`
+  - 水曜：その週の月曜「会計のはなし」（date が月曜の accounting の投稿）を動画にする
+  - 日曜：その週の木曜「決算書診断」（date が木曜の diagnosis の投稿）を動画にする。1シーン目の小見出しとキャプションに「架空事例」を入れる
+- 作るタイミング：今日から3日以内のリール日（水・日）で、元の投稿があり、IG-REEL-<その日> がまだ無いとき（カルーセルの制作とは別に作る）
+- 作り方のコツ（最初の2秒・表紙・誘導）は `kit/STRATEGY.md`
 - 手順
   1. posts/IG-REEL-<日付>/reel.json を書く（形式は `kit/STORY_REEL_SPEC.md`）。数字・事実は元のカルーセルと一致させる
   2. ナレーション：n8n MCP の execute_workflow で「IG自動投稿_9_リール音声（フジヤマ声）」（workflowId i2jeckXwfkTzDO6y）を実行する
@@ -112,8 +117,9 @@ git add queue/index.json && git commit -m "<投稿ID> 受付キューに登録" 
      `python3 kit/voice_from_n8n.py <保存されたファイル> posts/<投稿ID>` → voice/01.wav …
   4. `python3 kit/render_reel.py posts/<投稿ID>/reel.json` → reel.mp4（声つき）。reel_report.json の warnings を空にし、reel_contact.png と動画の途中のコマ（`ffmpeg -ss 5 -i reel.mp4 -frames:v 1 x.jpg`）を目で見て確認する
      - 声の生成が失敗したときは、voice フォルダが無い状態で描画すればBGMと字幕だけの動画になる。その場合は meta.json の memo に「声なし（理由）」と書く
-  5. meta.json に `"kind":"reel"`、date（水曜）・time（20:00）・series（会計のはなし）・title・caption・hashtags（#フジヤマの会計のはなし を先頭）・sources・poses を書き、「6」と同じ手順で登録する（voice フォルダもコミットしてよい）
-- 承認メールには表紙画像と動画のリンクが届く。承認すると水曜20:05にリールとして投稿される（フィードにも表示）
+  5. リールの日のストーリーズ2枚も作る：story.json（1枚目 type: reel、2枚目 type: cta）→ `python3 kit/render_story.py`（reel_cover.jpg ができてから）
+  6. meta.json に `"kind":"reel"`、date・time（20:00）・series（元の投稿と同じ）・title・caption・hashtags（シリーズのタグを先頭）・sources（元の投稿と同じ）・poses を書き、「6」と同じ手順で登録する（voice フォルダもコミットしてよい）
+- 承認メールには表紙画像・動画のリンク・ストーリーズが届く。承認すると20:05にリールとして投稿され（フィードにも表示）、続けてストーリーズが出る
 
 ## 9. 最後に必ず出すもの（定時タスクの結果として）
 

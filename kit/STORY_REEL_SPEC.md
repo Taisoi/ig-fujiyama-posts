@@ -22,11 +22,12 @@
 - points：2枚目。要点3つ（1行18文字以内）
 - cta：3枚目。投稿への誘導と保存・LINEの案内（CTA文言は管理シート「設定」の「CTA文言」と一致させる）
 - 3枚とも別のポーズ。その日のカルーセルと同じポーズは避ける
+- リールの日は2枚：1枚目 `{"type":"reel","heading":"新しいリール<br>…秒で解説","sub":"フジヤマが声で話しています"}`（ポーズ不要。reel_cover.jpg を自動で使う）、2枚目は cta
 - `python3 kit/render_story.py posts/<ID>/story.json` → story_1.jpg〜story_3.jpg・story_contact.png・story_report.json（warnings は空にする）
 
 ## リール（posts/IG-REEL-<YYYYMMDD>/reel.json）
 
-毎週水曜20:00。その週の月曜「会計のはなし」のカルーセルを、30〜45秒の動画にしたもの（カルーセルへの入口）。
+毎週 水・日 20:00。水曜は月曜「会計のはなし」、日曜は木曜「決算書診断」のカルーセルを、35〜50秒の動画にしたもの（カルーセルへの入口）。全シーンで文字・字幕・人物の位置は固定（描画スクリプトが自動で揃える）。
 
 ```json
 {"id":"IG-REEL-20261021","series":"accounting","title":"…","scenes":[
