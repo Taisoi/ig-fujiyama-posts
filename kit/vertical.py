@@ -50,6 +50,11 @@ body{background:#777;font-family:"Zen Maru Gothic","Noto Sans CJK JP",sans-serif
 .icon{position:absolute;right:150px;top:236px;width:120px;height:120px;border-radius:50%;background:var(--series);z-index:2;display:flex;align-items:center;justify-content:center}
 .icon svg{width:76px;height:76px}
 .sub{left:56px;right:140px;background:rgba(30,43,72,.92);color:#fff;font-size:46px;font-weight:700;line-height:1.5;padding:22px 30px;border-radius:16px;white-space:nowrap;text-align:center}
+.st .tag{left:80px;right:220px;top:250px}
+.st .icon{right:80px;top:228px;width:108px;height:108px}
+.st .blk{top:372px;left:40px;right:40px;border-radius:48px}
+.st .big,.st .mid{left:80px;right:80px}
+.st .name{left:80px}
 .btn{background:var(--navy);color:#fff;font-size:44px;font-weight:900;padding:22px 34px;border-radius:14px;text-align:center;line-height:1.4}
 """
 
@@ -79,10 +84,10 @@ FIT_JS = r"""
       y = el.getBoundingClientRect().bottom - top + parseFloat(el.dataset.gap || 40);
     });
     const blk = sec.querySelector('.blk');
-    if (blk && y !== null) blk.style.height = Math.max(200, y - 330) + 'px';
+    if (blk && y !== null) { const bt = blk.getBoundingClientRect().top - top; blk.style.height = Math.max(200, y - bt) + 'px'; }
     const p = sec.querySelector('img.person');
     const lastText = [...sec.querySelectorAll('.stack, .sub')].map(e => e.getBoundingClientRect().bottom - top).reduce((a, b) => Math.max(a, b), 0);
-    if (p) { const room = 1920 - lastText - 10; const h = Math.min(parseFloat(p.dataset.h), room);
+    if (p && !p.dataset.lock) { const room = 1920 - lastText - 10; const h = Math.min(parseFloat(p.dataset.h), room);
       p.style.height = Math.max(520, h) + 'px'; }
     if (lastText > 1920 - 340) warn.push(`${i + 1}枚目: 文字が下の表示エリア（下340px）にかかっています`);
   });
@@ -103,7 +108,7 @@ def person(pose, h=900, pos="right", flip=False):
         raise SystemExit(f"ポーズがありません: {pose}")
     tf = "transform:scaleX(-1);" if flip else ""
     if pos == "anchor":  # 体の中心を x=760 に固定（ポーズの横幅が違っても顔の位置がそろう）
-        return (f'<img class="person" data-pose="{pose}" data-h="{h}" src="{p.as_uri()}" '
+        return (f'<img class="person" data-pose="{pose}" data-h="{h}" data-lock="1" src="{p.as_uri()}" '
                 f'style="left:760px;transform:translateX(-50%){" scaleX(-1)" if flip else ""};height:{h}px">')
     side = {"right": "right:60px;", "left": "left:20px;", "center": "left:50%;transform:translateX(-50%);"}[pos]
     if pos == "center" and flip:
