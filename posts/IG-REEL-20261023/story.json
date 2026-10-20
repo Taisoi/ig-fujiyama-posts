@@ -1,0 +1,11 @@
+{
+ "id": "IG-REEL-20261023",
+ "series": "news",
+ "frames": [
+  {"type": "reel", "heading": "新しいリール<br>利上げで利息は<span class=\"em\">いくら</span>増える？", "sub": "フジヤマが声で話しています"},
+  {"type": "cta", "pose": "n09",
+   "heading": "あなたの借入、<br><span class=\"em\">変動</span>と<span class=\"em\">固定</span>どっち？",
+   "lines": ["保存して銀行面談の前に", "相談はプロフィールのLINEから"],
+   "button": "プロフィールの<br>リールをチェック"}
+ ]
+}
