@@ -1,0 +1,8 @@
+{"id":"IG-ACC-20261026","series":"accounting","frames":[
+ {"type":"ask","label":"今日の投稿","pose":"n08",
+  "title":"消費税の納付月、<br>お金は<span class=\"em\">足りますか？</span>","sub":"利益1,000万円でも<span class=\"em\">400万円</span>出ていく例"},
+ {"type":"points","pose":"n11","heading":"見落としは<br><span class=\"em\">3つ</span>",
+  "items":["消費税は預かったお金","給料には消費税がない","前年の額で前払いがある"]},
+ {"type":"cta","pose":"p29","heading":"書き込み用ページは<br><span class=\"em\">最新の投稿</span>で",
+  "lines":["保存して納付月の前に","相談はプロフィールのLINEから"],"button":"プロフィールから<br>最新投稿をチェック"}
+]}
