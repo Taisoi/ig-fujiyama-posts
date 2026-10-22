@@ -22,7 +22,7 @@
 - points：2枚目。要点3つ（1行18文字以内）
 - cta：3枚目。投稿への誘導と保存・LINEの案内（CTA文言は管理シート「設定」の「CTA文言」と一致させる）
 - 3枚とも別のポーズ。その日のカルーセルと同じポーズは避ける
-- リールの日は2枚：1枚目 `{"type":"reel","heading":"新しいリール<br>…秒で解説","sub":"フジヤマが声で話しています"}`（ポーズ不要。reel_cover.jpg を自動で使う）、2枚目は cta
+- リールの日は2枚：1枚目 `{"type":"reel","heading":"新しいリール<br>…秒で解説","sub":"フジヤマが音声で解説します"}`（ポーズ不要。reel_cover.jpg を自動で使う）、2枚目は cta
 - 配置は全フレームで固定（2026-10-13）：タグと丸アイコンは上250px、色ブロックは上372pxから、文字は左右80px、人物は高さ820pxで体の中心をx=760にそろえる。フレームごとに位置を変えない
 - `python3 kit/render_story.py posts/<ID>/story.json` → story_1.jpg〜story_3.jpg・story_contact.png・story_report.json（warnings は空にする）
 
