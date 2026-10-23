@@ -1,0 +1,8 @@
+{"id":"IG-NEWS-20261027","series":"news","frames":[
+ {"type":"ask","label":"今日の投稿","pose":"n08",
+  "title":"税金の滞納で<br>融資が<span class=\"em\">止まる</span>？","sub":"新規滞納の<span class=\"em\">52%</span>は消費税"},
+ {"type":"points","pose":"n11","heading":"社長が今やる<br><span class=\"em\">3つ</span>",
+  "items":["納期限を一覧にする","払えない月は早めに相談","融資の前に未納を確認"]},
+ {"type":"cta","pose":"n15","heading":"猶予の期限は<br><span class=\"em\">最新の投稿</span>で",
+  "lines":["保存して納期限の前に","相談はプロフィールのLINEから"],"button":"プロフィールから<br>最新投稿をチェック"}
+]}
