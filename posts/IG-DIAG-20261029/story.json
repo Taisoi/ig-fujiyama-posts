@@ -1,0 +1,8 @@
+{"id":"IG-DIAG-20261029","series":"diagnosis","frames":[
+ {"type":"ask","label":"今日の投稿【架空事例】","pose":"n08",
+  "title":"売上は増えたのに<br>利益が<span class=\"em\">減った</span>？","sub":"卸売業C社の<span class=\"em\">決算書診断</span>"},
+ {"type":"points","pose":"p15","heading":"原因は<br><span class=\"em\">2方向</span>から",
+  "items":["粗利率が25%→22%に低下","販管費は300万円増加","粗利率1ポイント＝330万円"]},
+ {"type":"cta","pose":"n29","heading":"処方箋は<br><span class=\"em\">最新の投稿</span>で",
+  "lines":["自社の粗利率も並べてみる","相談はプロフィールのLINEから"],"button":"プロフィールから<br>最新投稿をチェック"}
+]}
