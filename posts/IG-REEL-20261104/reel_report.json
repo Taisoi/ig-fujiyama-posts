@@ -1,0 +1,17 @@
+{
+ "scenes": 8,
+ "seconds": 49.0,
+ "voice": true,
+ "bytes": 3036535,
+ "poses": [
+  "n44",
+  "n28",
+  "p15",
+  "n05",
+  "p08",
+  "p11",
+  "p19",
+  "n29"
+ ],
+ "warnings": []
+}
