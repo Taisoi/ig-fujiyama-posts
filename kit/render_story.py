@@ -17,6 +17,18 @@ from vertical import SERIES, ICONS, person, doc, shoot, contact  # noqa: E402
 PERSON_H = 820  # 全フレーム同じ大きさ・同じ位置（体の中心 x=760）に固定してズレを防ぐ
 TOP = 424        # 色ブロック（top 372）の内側52px、最初の文字の位置
 
+# リールお知らせの一文は固定（2026-10-26 本人指示：「フジヤマが声で話しています」は不自然なので二度と使わない）。
+# story.json の sub に何が書かれていても、この文言で描画する。
+REEL_SUB = "フジヤマが音声で解説します"
+BANNED = ["声で話しています", "声で話して"]
+
+
+def check_banned(spec):
+    text = json.dumps(spec, ensure_ascii=False)
+    for w in BANNED:
+        if w in text:
+            raise SystemExit(f"禁止表現「{w}」が story.json にあります。「{REEL_SUB}」に直してください")
+
 
 def frame(i, f, series):
     pill, tag, _ = SERIES[series]
@@ -52,7 +64,7 @@ def frame(i, f, series):
                 f'<img src="{cover.as_uri()}" style="width:100%;height:100%;object-fit:cover">'
                 f'<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;background:rgba(30,43,72,.85);display:flex;align-items:center;justify-content:center">'
                 f'<div style="width:0;height:0;border-left:56px solid #fff;border-top:34px solid transparent;border-bottom:34px solid transparent;margin-left:14px"></div></div></div>'
-                f'<div class="z mid fit" style="top:1490px;font-size:46px;text-align:center" data-maxw="888">{f.get("sub", "")}</div>')
+                f'<div class="z mid fit" style="top:1490px;font-size:46px;text-align:center" data-maxw="888">{REEL_SUB}</div>')
         return f'<section class="v st" id="v{i}">{head}{body}</section>'
     raise SystemExit(f"不明なストーリーズの種類: {t}")
 
@@ -61,6 +73,7 @@ async def main(spec_path):
     spec_path = Path(spec_path).resolve()
     out = spec_path.parent
     spec = json.loads(spec_path.read_text())
+    check_banned(spec)
     frames = spec["frames"]
     for f in frames:
         f["_dir"] = str(out)
