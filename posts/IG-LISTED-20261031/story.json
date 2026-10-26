@@ -1,0 +1,16 @@
+{
+ "id": "IG-LISTED-20261031",
+ "series": "listed",
+ "frames": [
+  {"type": "ask", "label": "今日の投稿", "pose": "n37",
+   "title": "売上<span class=\"em\">＋448億円</span>で<br>利益はいくら増えた？",
+   "sub": "サイゼリヤの<span class=\"em\">利益率</span>を分解"},
+  {"type": "points", "pose": "n11",
+   "heading": "毎月<br><span class=\"em\">3つ</span>を見る",
+   "items": ["売上の伸びより利益率", "原価率を0.1pt単位で", "仕入値が上がったら値決めを"]},
+  {"type": "cta", "pose": "n43",
+   "heading": "書き込み用ページは<br><span class=\"em\">最新の投稿</span>で",
+   "lines": ["出典：2026年8月期 決算説明資料", "売買の推奨ではありません"],
+   "button": "プロフィールから<br>最新投稿をチェック"}
+ ]
+}
