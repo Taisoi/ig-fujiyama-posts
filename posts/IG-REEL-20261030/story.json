@@ -1,0 +1,11 @@
+{
+ "id": "IG-REEL-20261030",
+ "series": "news",
+ "frames": [
+  {"type": "reel", "heading": "新しいリール<br>滞納の半分以上は<span class=\"em\">何の税</span>？", "sub": "フジヤマが音声で解説します"},
+  {"type": "cta", "pose": "p29",
+   "heading": "あなたの会社の<br><span class=\"em\">次の納期限</span>は何月？",
+   "lines": ["保存して納期限の前に", "相談はプロフィールのLINEから"],
+   "button": "プロフィールの<br>リールをチェック"}
+ ]
+}
