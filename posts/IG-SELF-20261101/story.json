@@ -1,0 +1,8 @@
+{"id":"IG-SELF-20261101","series":"failure","frames":[
+ {"type":"ask","label":"今日の投稿","pose":"pose_B",
+  "title":"なぜ<span class=\"em\">数字</span>の話を<br>毎日しているのか","sub":"<span class=\"em\">10億円</span>を失った話をします"},
+ {"type":"points","pose":"n12","heading":"フジヤマは<br><span class=\"em\">こんな人</span>",
+  "items":["元は大手金融企業の営業マン","4カ国で事業、損失は▲10億円","いまは社長の数字の相談役"]},
+ {"type":"cta","pose":"p29","heading":"続きは<br><span class=\"em\">最新の投稿</span>で",
+  "lines":["フォローして毎日チェック","相談はプロフィールのLINEから"],"button":"プロフィールから<br>最新投稿をチェック"}
+]}

@@ -1,0 +1,91 @@
+{
+ "id": "IG-SELF-20261101",
+ "series": "failure",
+ "title": "自己紹介：10億円を失った会計おじさん",
+ "slides": [
+  {
+   "type": "cover",
+   "label": "はじめまして",
+   "pose": "n34",
+   "title": [
+    {
+     "html": "<span class=\"em\">10億円</span>を失った<br>会計おじさんです",
+     "size": 118,
+     "mt": 0
+    }
+   ]
+  },
+  {
+   "type": "bubble",
+   "pose": "p41",
+   "bubble": "数字なんて、<br>任せておけば<br>いいでしょ。",
+   "body": "……昔の私の<br>口ぐせです。",
+   "next": "フジヤマの話 →"
+  },
+  {
+   "type": "card",
+   "pose": "n40",
+   "small": "はじまり",
+   "heading": "元は<span class=\"em\">金融</span>の<br>営業マン",
+   "card_html": "大手金融企業の営業から<br>そこから<span class=\"em\">4カ国</span>で事業を展開",
+   "body": "勢いだけは<br>ありました。"
+  },
+  {
+   "type": "card",
+   "pose": "n07",
+   "small": "でも",
+   "heading": "伸びていた<br>事業が止まった",
+   "card_html": "会計も財務も<br>学んでいなかったから",
+   "body": "数字が<br>読めなかった。"
+  },
+  {
+   "type": "card",
+   "pose": "n27",
+   "small": "その結果",
+   "heading": "損失は<br><span class=\"em\">▲10億円</span>",
+   "card_html": "<span class=\"em\">4度</span>、死にかけました",
+   "body": "数字から<br>逃げた代償。"
+  },
+  {
+   "type": "bubble",
+   "pose": "p28",
+   "bubble": "答えは、<br>ほぼ<span class=\"em\">数字</span>の中に<br>ありました。",
+   "body": "あのとき<br>読めていたら。"
+  },
+  {
+   "type": "list",
+   "pose": "n11",
+   "small": "いまの仕事",
+   "heading": "社長の数字の<br><span class=\"em\">相談役</span>",
+   "items": [
+    "資金調達・銀行との付き合い",
+    "管理会計で毎月の数字を見える化",
+    "上場・M&Aを見据えた企業価値"
+   ]
+  },
+  {
+   "type": "card",
+   "pose": "n41",
+   "small": "ハレノヒハレ会計 代表",
+   "heading": "研修から<br><span class=\"em\">経営管理</span>まで",
+   "card_html": "研修：りそな総研様・地方銀行<br>　　　プライム上場企業<br>得意：年商5億〜50億円の会社",
+   "body": "一気通貫で<br>伴走します。"
+  },
+  {
+   "type": "bubble",
+   "pose": "n49",
+   "bubble": "同じ失敗を、<br>あなたには<br><span class=\"em\">させたくない</span>。",
+   "body": "だから毎日、<br>数字の話を<br>届けています。"
+  },
+  {
+   "type": "final",
+   "pose": "p48",
+   "heading_size": 68,
+   "heading": "このアカウントで<br><span class=\"em\">毎日届くもの</span>",
+   "sub": "フォローして毎日チェック",
+   "card_size": 34,
+   "card_html": "□ 朝7:30　保存して使える図解<br>□ 夜20:30　60秒の解説リール<br>□ 決算書診断・お金のニュース<br>□ 上場会社の決算の読み方",
+   "button": "フォローして<br>毎日チェック"
+  }
+ ]
+}
