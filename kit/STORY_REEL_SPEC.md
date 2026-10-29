@@ -42,7 +42,7 @@
 - 6〜8シーン。text は2行まで・1行10文字前後。say はそのシーンのナレーション（1文、全角40文字以内）。字幕にも say が出る（caption で別の字幕を指定してもよい）
 - 1シーン目で問いかけ、最後のシーンで「詳しくはプロフィールの投稿で」と誘導する
 - 数字は読み上げやすく書く（「40%」→ say では「40パーセント」）。英字略語は読み方をカタカナで
-- ナレーション：2026-10-29から本人録音で作った新しい声（HeyGen「藤山泰成_日本語_20261029」）で作る。HeyGen MCPで読み上げ→n8n「IG自動投稿_9b」でWAV化。手順は PRODUCTION.md「8」
+- ナレーション：n8n「IG自動投稿_9_リール音声」で作る。声は2026-10-29から本人録音で作ったGeminiの複製の声（voice_e4gsoao11e59）。読み間違いチェックつき。手順は PRODUCTION.md「8」
 - `python3 kit/render_reel.py posts/<ID>/reel.json` → reel.mp4・reel_cover.jpg・reel_contact.png・reel_report.json
   - voice/01.wav… があれば声つき、なければBGMと字幕だけ（BGMは毎回スクリプトが作る自作の音で、著作権の心配はない）
 - meta.json は `"kind":"reel"` を入れ、caption・hashtags・sources・poses・title・date・time・series を書く（n は自動で1）
