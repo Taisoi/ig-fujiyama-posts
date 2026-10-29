@@ -7,7 +7,7 @@
 実行結果は mcp__n8n__get_workflow_execution（includeData: true, nodeNames: ["Code_WavBase64"]）で取得する。
 結果が大きいため、ツールが自動でファイルに保存する。そのファイルのパスを渡す。
 """
-import base64, json, sys
+import base64, json, subprocess, sys, wave
 from pathlib import Path
 
 
@@ -43,9 +43,20 @@ def main(src, post_dir):
     info = []
     for ln in sorted(p["lines"], key=lambda x: x["i"]):
         f = out / f"{int(ln['i']):02d}.wav"
-        f.write_bytes(base64.b64decode(ln["wav_b64"]))
-        info.append({"i": ln["i"], "seconds": ln["seconds"], "text": ln["text"]})
-    (out / "voice.json").write_text(json.dumps({"id": p.get("id"), "lines": info}, ensure_ascii=False, indent=1))
+        raw_bytes = base64.b64decode(ln["wav_b64"])
+        if raw_bytes[:4] == b"RIFF":
+            f.write_bytes(raw_bytes)
+        else:
+            # HeyGenの声（IG自動投稿_9b）はMP3で届くことがある → ffmpegでWAV（48kHz・モノラル・16bit）に直す
+            tmp = out / f"{int(ln['i']):02d}.src"
+            tmp.write_bytes(raw_bytes)
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(tmp),
+                            "-ar", "48000", "-ac", "1", "-sample_fmt", "s16", str(f)], check=True)
+            tmp.unlink()
+        with wave.open(str(f)) as w:
+            secs = round(w.getnframes() / w.getframerate(), 2)
+        info.append({"i": ln["i"], "seconds": secs, "text": ln["text"]})
+    (out / "voice.json").write_text(json.dumps({"id": p.get("id"), "voice": p.get("voice", "gemini:voice_8qwzvjtocunq"), "lines": info}, ensure_ascii=False, indent=1))
     print(json.dumps(info, ensure_ascii=False, indent=1))
 
 

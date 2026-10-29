@@ -131,11 +131,16 @@ git add queue/index.json && git commit -m "<投稿ID> 受付キューに登録" 
 - 作り方のコツ（最初の2秒・表紙・誘導）は `kit/STRATEGY.md`
 - 手順
   1. posts/IG-REEL-<日付>/reel.json を書く（形式は `kit/STORY_REEL_SPEC.md`）。数字・事実は元のカルーセルと一致させる
-  2. ナレーション：n8n MCP の execute_workflow で「IG自動投稿_9_リール音声（フジヤマ声）」（workflowId i2jeckXwfkTzDO6y）を実行する
-     - executionMode: "production"、triggerNodeName: "Webhook_ReelVoice"
-     - inputs: {"webhookData":{"method":"POST","body":{"token":"rv_9Qm2Lx7Tz4Kc8Wn5","id":"<投稿ID>","lines":[各シーンの say を順に]}}}
-  3. 30秒ほど待って get_workflow_execution で status が success になったら、includeData: true、nodeNames: ["Code_WavBase64"] で結果を取得する。結果は大きいのでファイルに保存される。そのパスを使って
-     `python3 kit/voice_from_n8n.py <保存されたファイル> posts/<投稿ID>` → voice/01.wav …
+  2. ナレーション（2026-10-29から：本人録音から作った新しい声。藤山さんが「自分の声に近い」と承認）
+     - 声：HeyGen「藤山泰成_日本語_20261029」（voiceId 37f4cb0f017a49cebbb198869d42b0f3）。旧TAISEI Voice（Gemini）は使わない
+     - シーンごとに HeyGen MCP の create_speech_without_player を1回ずつ呼ぶ（voiceId 上記、language: "ja"、engine は指定しない）。1本のリールで呼ぶのはシーン数ぶんだけ。失敗したセリフを自動で何度も作り直さない（1回だけ再試行してよい）
+     - 読み上げ用の文（say とは別に作る。字幕・reel.json は変えない）：数字は漢数字にする（「9,935億円」→「九千九百三十五億円」、「令和7年度」→「令和七年度」、「6か月」→「六か月」、「52パーセント」→「五十二パーセント」）。ROIC→ロイック、WACC→ワック。英字略語はカタカナ
+     - 返ってきた audio_url と duration を集め、n8n MCP の execute_workflow で「IG自動投稿_9b_リール音声（HeyGen新声）」（workflowId F1Qa12ztXBzsrtdK）を実行する
+       - executionMode: "production"、triggerNodeName: "Webhook_ReelVoiceHeyGen"
+       - inputs: {"webhookData":{"method":"POST","body":{"token":"rvh_4Tq8Zm2Kx7Lp9Wn3","id":"<投稿ID>","lines":[{"text":"<say>","seconds":<duration>,"url":"<audio_url>"}, …シーン順に]}}}
+     - HeyGen MCP が使えないときだけ、旧方式の「IG自動投稿_9_リール音声（フジヤマ声）」（workflowId i2jeckXwfkTzDO6y、triggerNodeName "Webhook_ReelVoice"、body {"token":"rv_9Qm2Lx7Tz4Kc8Wn5","id":"<投稿ID>","lines":[say を順に]}）を使い、meta.json の memo に「旧声（理由）」と書く
+  3. 20秒ほど待って get_workflow_execution で status が success になったら、includeData: true、nodeNames: ["Code_WavBase64"] で結果を取得する。結果は大きいのでファイルに保存される。そのパスを使って
+     `python3 kit/voice_from_n8n.py <保存されたファイル> posts/<投稿ID>` → voice/01.wav …（HeyGenの音声はMP3で届くので、スクリプトがffmpegでWAVに直す）
   4. `python3 kit/render_reel.py posts/<投稿ID>/reel.json` → reel.mp4（声つき）。reel_report.json の warnings を空にし、reel_contact.png と動画の途中のコマ（`ffmpeg -ss 5 -i reel.mp4 -frames:v 1 x.jpg`）を目で見て確認する
      - 声の生成が失敗したときは、voice フォルダが無い状態で描画すればBGMと字幕だけの動画になる。その場合は meta.json の memo に「声なし（理由）」と書く
   5. リールの日のストーリーズ2枚も作る：story.json（1枚目 type: reel、2枚目 type: cta）→ `python3 kit/render_story.py`（reel_cover.jpg ができてから）
