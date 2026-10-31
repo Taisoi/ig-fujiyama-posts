@@ -1,0 +1,8 @@
+{"id":"IG-NEWS-20261104","series":"news","frames":[
+ {"type":"ask","label":"今日の投稿","pose":"p10",
+  "title":"食品の消費税<span class=\"em\">1%</span>で<br>還付が出る会社？","sub":"届出しだいで<span class=\"em\">0円</span>にも"},
+ {"type":"points","pose":"n40","heading":"食品を売る社長は<br><span class=\"em\">3つ</span>を確認",
+  "items":["売上に占める食品の割合","一般と簡易の納税額の差","締め日またぎの請求書"]},
+ {"type":"cta","pose":"n41","heading":"計算例は<br><span class=\"em\">最新の投稿</span>で",
+  "lines":["保存して3月までに見返す","相談はプロフィールのLINEから"],"button":"プロフィールから<br>最新投稿をチェック"}
+]}
