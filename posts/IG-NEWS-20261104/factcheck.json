@@ -1,0 +1,115 @@
+{
+ "sources": [
+  {
+   "id": "S1",
+   "title": "国税庁 消費税率引下げ（飲食料品）Q&A（令和8年9月）",
+   "url": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/0026008-127_qa.pdf",
+   "checked_at": "2026-11-01",
+   "locator": "問1-1〜1-3（税率・期間・対象）、問1-6（定期供給契約：1/1前締結・4/1前領収）、問2-2（請求書の区分）、問3-1（免税は還付なし）、問3-2・3-4・3-5（届出特例・2年間）、問3-6（簡易課税は飲食料品の売上税額と同額を仕入税額に計上）、問3-9（値札特例：困難な事情＋誤認防止措置、2/1〜）",
+   "fetched": true
+  },
+  {
+   "id": "S2",
+   "title": "国税庁 リーフレット（令和8年9月）",
+   "url": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/0026008-127_leaflet.pdf",
+   "checked_at": "2026-10-31",
+   "locator": "税率1%・期間・届出特例",
+   "fetched": true
+  },
+  {
+   "id": "S3",
+   "title": "参議院 第222回国会 閣法第1号 法律案",
+   "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/pdf/t0802220012220.pdf",
+   "checked_at": "2026-11-01",
+   "locator": "題名、附則第1条（施行期日 令和9年4月1日）。法律番号は空欄（未成立）",
+   "fetched": true
+  },
+  {
+   "id": "S4",
+   "title": "衆議院 議案審議経過（閣法 第222回国会 1）",
+   "url": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/keika/1DE342E.htm",
+   "checked_at": "2026-11-01",
+   "locator": "衆議院 議案受理 令和8年10月9日、付託 令和8年10月20日 財務金融委員会、審査終了・議決・公布はいずれも空欄",
+   "fetched": true
+  }
+ ],
+ "claims": [
+  {
+   "text": "期間 2027年4月1日〜2029年3月31日、税率8%→1%、対象は現行8%の飲食料品",
+   "source": "S1"
+  },
+  {
+   "text": "店内飲食・酒類は10%のまま",
+   "source": "S1"
+  },
+  {
+   "text": "10月9日提出・衆院で審議中",
+   "source": "S4"
+  },
+  {
+   "text": "簡易課税は食品分の納付も還付も生じない",
+   "source": "S1"
+  },
+  {
+   "text": "免税事業者は還付を受けられない",
+   "source": "S1"
+  },
+  {
+   "text": "4月1日を含む課税期間中の届出特例、免税からは原則2年間課税事業者",
+   "source": "S1"
+  },
+  {
+   "text": "インボイス登録は登録希望日の15日前まで",
+   "source": "S1"
+  },
+  {
+   "text": "2027年1月1日前締結・4月1日前領収の定期供給契約は8%",
+   "source": "S1"
+  },
+  {
+   "text": "2027年2月1日から条件つきで1%の値札表示",
+   "source": "S1"
+  }
+ ],
+ "status": {
+  "kind": "bill",
+  "stage": "法案提出・衆議院 財務金融委員会で審議中（未成立）",
+  "checked_at": "2026-11-01",
+  "source": "S4",
+  "recheck_url": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/keika/1DE342E.htm",
+  "recheck_rule": "投稿直前に衆議院・参議院の審議経過を開き、議決・公布の欄が空欄のままか確認。変化があれば本文・画像・キャプションを直すまで保留"
+ },
+ "numbers": [
+  {
+   "label": "架空の食品店A社の還付（一般課税・税抜）",
+   "expr": "4000*0.01-2800*0.01-800*0.10",
+   "value": -68,
+   "kind": "架空例",
+   "conditions": [
+    "一般課税"
+   ],
+   "display": [
+    "68万円"
+   ]
+  }
+ ],
+ "verified_values": [
+  "0円",
+  "1%",
+  "8%",
+  "10%",
+  "4,000万円",
+  "2,800万円",
+  "800万円",
+  "40万円",
+  "▲28万円",
+  "▲80万円"
+ ],
+ "verified_dates": [
+  "2026年11月1日",
+  "2027年1月1日",
+  "2027年4月1日",
+  "2029年3月31日",
+  "2026年11月4日"
+ ]
+}
