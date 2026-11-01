@@ -1,0 +1,95 @@
+{
+ "sources": [
+  {
+   "id": "S1",
+   "title": "国税庁 主な減価償却資産の耐用年数表",
+   "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/pdf/2100_01.pdf",
+   "checked_at": "2026-11-01",
+   "locator": "車両 自動車（一般用）その他 6年",
+   "fetched": true
+  },
+  {
+   "id": "S2",
+   "title": "国税庁 法人の減価償却制度の改正に関するQ&A（平成23年12月改正）",
+   "url": "https://www.nta.go.jp/publication/pamph/hojin/kaisei_gaiyo2011/pdf/qa.pdf",
+   "checked_at": "2026-11-01",
+   "locator": "参考資料 別表第十 6年0.333・2年1.000",
+   "fetched": true
+  },
+  {
+   "id": "S3",
+   "title": "国税庁 タックスアンサー No.5404 中古資産の耐用年数",
+   "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5404.htm",
+   "checked_at": "2026-11-01",
+   "locator": "簡便法の算式・1年未満切捨て・2年未満は2年",
+   "fetched": true
+  }
+ ],
+ "claims": [
+  {
+   "text": "普通自動車6年",
+   "source": "S1"
+  },
+  {
+   "text": "定率法償却率0.333・1.000",
+   "source": "S2"
+  },
+  {
+   "text": "中古の簡便法",
+   "source": "S3"
+  }
+ ],
+ "numbers": [
+  {
+   "label": "今期の経費",
+   "expr": "300*0.333*2/12",
+   "value": 16.65,
+   "tolerance": 0.01,
+   "kind": "架空例",
+   "conditions": [
+    "定率法"
+   ],
+   "display": [
+    "16.65万円",
+    "17万円"
+   ]
+  },
+  {
+   "label": "減る税金",
+   "expr": "16.65*0.30",
+   "value": 5,
+   "tolerance": 0.01,
+   "kind": "架空例",
+   "conditions": [
+    "30%"
+   ],
+   "display": [
+    "5万円"
+   ]
+  },
+  {
+   "label": "中古の今期経費",
+   "expr": "300*1.000*2/12",
+   "value": 50,
+   "kind": "架空例",
+   "conditions": [
+    "簡便法"
+   ],
+   "display": [
+    "50万円"
+   ]
+  }
+ ],
+ "verified_values": [
+  "0円",
+  "16.65万円",
+  "17万円",
+  "20%",
+  "30%",
+  "300万円",
+  "50万円",
+  "5万円",
+  "99.9万円"
+ ],
+ "verified_dates": []
+}

@@ -1,0 +1,12 @@
+{
+ "status": "hold",
+ "errors": [
+  "制作とは別の検証担当の確認（verify_review.json）がありません"
+ ],
+ "notes": [],
+ "content_hash": "cd2b746b59231c5562f38f766dd3fe3f6c830590cb5bd1146f25a81a7b9a6b6e",
+ "checked_at": "2026-11-01T18:27:12+09:00",
+ "stage": "",
+ "recheck_url": "",
+ "stage_checked_at": ""
+}

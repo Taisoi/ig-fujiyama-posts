@@ -1,0 +1,42 @@
+{
+ "sources": [],
+ "claims": [],
+ "numbers": [
+  {
+   "label": "損益分岐点",
+   "expr": "350/((1000-600)/1000)",
+   "value": 875,
+   "kind": "架空例",
+   "conditions": [
+    "架空"
+   ],
+   "display": [
+    "875万円"
+   ]
+  },
+  {
+   "label": "安全余裕率",
+   "expr": "(1000-875)/1000*100",
+   "value": 12.5,
+   "kind": "架空例",
+   "conditions": [
+    "架空"
+   ],
+   "display": [
+    "12.5%"
+   ]
+  }
+ ],
+ "verified_values": [
+  "1,000万円",
+  "12.5%",
+  "350万円",
+  "40%",
+  "400万円",
+  "50万円",
+  "600万円",
+  "875万円"
+ ],
+ "verified_dates": [],
+ "no_external_facts": true
+}

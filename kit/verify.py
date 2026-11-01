@@ -135,8 +135,8 @@ def verify(d):
 
     # 1 一次資料
     srcs = fc.get("sources", [])
-    if not srcs:
-        errs.append("一次資料が記録されていません")
+    if not srcs and not (fc.get("no_external_facts") is True and not fc.get("claims") and not fc.get("status")):
+        errs.append("一次資料が記録されていません（外部の事実を使わず架空の計算だけの投稿は no_external_facts: true と書く）")
     ids = set()
     for s in srcs:
         ids.add(s.get("id"))
@@ -145,7 +145,7 @@ def verify(d):
             errs.append(f"資料「{name}」に URL・確認日・該当箇所のどれかがありません")
         if s.get("fetched") is not True:
             errs.append(f"資料「{name}」を実際に開いて確認できていません（取得失敗）")
-    needs_primary = meta.get("series") not in ("会計のはなし",) or fc.get("claims")
+    needs_primary = (meta.get("series") not in ("会計のはなし",) or fc.get("claims")) and not fc.get("no_external_facts")
     if needs_primary and not any(any(dm in (s.get("url") or "") for dm in PRIMARY_DOMAINS) or s.get("type") == "ir"
                                  for s in srcs if s.get("fetched") is True):
         errs.append("官公庁・国会・取引所・会社IRなどの一次資料を、実際に開いて確認したものが1件もありません")
@@ -193,7 +193,8 @@ def verify(d):
             if not conds:
                 errs.append(f"「{label}」は{kind}なのに、結論を左右する条件（課税方式など）が書かれていません")
             for face, t in surf.items():
-                hit = [disp for disp in n.get("display", []) if norm_num(disp).lstrip("▲") in norm_num(t)]
+                toks = {norm_num(x).lstrip("▲") for x in NUM_RE.findall(t)}
+                hit = [disp for disp in n.get("display", []) if norm_num(disp).lstrip("▲") in toks]
                 if not hit:
                     continue
                 if "架空" not in t and kind == "架空例":
@@ -203,7 +204,7 @@ def verify(d):
                     if miss:
                         errs.append(f"{face}の「{hit[0]}」の近くに条件（{'・'.join(miss)}）がありません")
                 if face == "キャプション":
-                    for m in re.finditer(re.escape(norm_num(hit[0]).lstrip("▲")), norm_num(t)):
+                    for m in re.finditer(r"(?<![\d.,])" + re.escape(norm_num(hit[0]).lstrip("▲")), norm_num(t)):
                         window = norm_num(t)[max(0, m.start() - 300): m.end() + 300]
                         miss = [c for c in conds if c not in window]
                         if miss or "架空" not in window:
