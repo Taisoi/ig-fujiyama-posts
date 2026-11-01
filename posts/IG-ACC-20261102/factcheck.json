@@ -11,7 +11,7 @@
   {
    "id": "S2",
    "title": "国税庁 法人の減価償却制度の改正に関するQ&A（平成23年12月改正）",
-   "url": "https://www.nta.go.jp/publication/pamph/hojin/kaisei_gaiyo2011/pdf/qa.pdf",
+   "url": "https://www.nta.go.jp/publication/pamph/hojin/kaisei_gaiyo2011/pdf/1112kaisei_faq.pdf",
    "checked_at": "2026-11-01",
    "locator": "参考資料 別表第十 6年0.333・2年1.000",
    "fetched": true
@@ -22,6 +22,14 @@
    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5404.htm",
    "checked_at": "2026-11-01",
    "locator": "簡便法の算式・1年未満切捨て・2年未満は2年",
+   "fetched": true
+  },
+  {
+   "id": "S4",
+   "title": "国税庁 法人の減価償却制度の改正に関するQ&A（平成19年4月）Q7",
+   "url": "https://www.nta.go.jp/law/joho-zeikaishaku/hojin/h19/genkaqa.pdf",
+   "checked_at": "2026-11-01",
+   "locator": "Q7 事業年度の中途で事業の用に供した場合の月割り",
    "fetched": true
   }
  ],
@@ -37,6 +45,10 @@
   {
    "text": "中古の簡便法",
    "source": "S3"
+  },
+  {
+   "text": "月割り（1か月未満は1か月）",
+   "source": "S4"
   }
  ],
  "numbers": [
