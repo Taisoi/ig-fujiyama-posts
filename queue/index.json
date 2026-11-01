@@ -580,7 +580,15 @@
    "reel_seconds": 49.0,
    "reel_voice": true,
    "reel_script": "1. 月の売上1,000万円の会社。あと何パーセント落ちたら赤字でしょう？\n2. 答えは、損益分岐点で出せます。3ステップです。\n3. ひとつ目。費用を、売上に比例する変動費と、固定費に分けます。\n4. ふたつ目。売上1,000万円、変動費600万円なら、限界利益率は40パーセント。\n5. みっつ目。固定費350万円を40パーセントで割ると、分岐点は875万円。\n6. つまり、売上が12.5パーセント落ちると赤字です。\n7. 月50万円の採用で、分岐点は1,000万円。今の売上でトントンです。\n8. 図解はプロフィールの投稿で。保存して、毎週の続きもどうぞ。",
-   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/10df6a19ec81d599cbabc64bb5e50b5159ca1f11/posts/IG-REEL-20261104/"
+   "verify": {
+    "status": "pass",
+    "hash": "cd2b746b59231c5562f38f766dd3fe3f6c830590cb5bd1146f25a81a7b9a6b6e",
+    "checked_at": "2026-11-01T18:31:17+09:00",
+    "stage": "",
+    "recheck_url": "",
+    "stage_checked_at": ""
+   },
+   "base": "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts/5651a07e889a721d9f51d481012c13be4e4805fe/posts/IG-REEL-20261104/"
   }
  ]
 }
