@@ -1,0 +1,24 @@
+{
+ "reviewer": "independent-verifier",
+ "reviewed_at": "2026-11-01T18:30:23+09:00",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "/home/claude/ig-fujiyama-posts/posts/IG-ACC-20261019/post.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-ACC-20261019/meta.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261104/reel.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261104/meta.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261104/factcheck.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261104/story.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261104/voice/voice.json",
+  "/home/claude/ig-fujiyama-posts/queue/index.json"
+ ],
+ "recalc": "Python再計算：限界利益率＝(1,000−600)÷1,000＝0.40（40%）／損益分岐点売上高＝固定費350÷0.40＝875万円／安全余裕率＝(1,000−875)÷1,000＝12.5%（売上を12.5%減らすと利益0で検算一致）／採用後 固定費350+50＝400、400÷0.40＝1,000万円（安全余裕率0%＝今の売上でトントン）。式は一般的な定義（限界利益率＝(売上−変動費)÷売上、損益分岐点売上高＝固定費÷限界利益率、安全余裕率＝(売上−損益分岐点売上高)÷売上）と一致。元カルーセルIG-ACC-20261019の数値・式とすべて一致。",
+ "content_hash": "cd2b746b59231c5562f38f766dd3fe3f6c830590cb5bd1146f25a81a7b9a6b6e",
+ "media_viewed": {
+  "reel.mp4": "見た",
+  "reel_cover.jpg": "6c106e218ec0ba0336bba5d46a7305c91c27cf5e5630134f8c61280bf361f7b4",
+  "story_1.jpg": "868f83fdb97e0cb5866c00f41931de6af5b4388c5dad48df27c9d61243d28e47",
+  "story_2.jpg": "3619dd99ca9fdd0b0d6c139fcd44903951435c1898c244b809ab5293bbcea4b0"
+ }
+}
