@@ -1,17 +1,14 @@
 {
  "reviewer": "independent-verifier",
- "reviewed_at": "2026-11-01T18:14:00+09:00",
- "result": "hold",
- "issues": [
-  "story_1.jpg のラベル「今日の投稿」は、ストーリーズを投稿した日やハイライトに保存した後に見る時点によって指す投稿が変わる表現で、story_3.jpg では「11月4日の投稿」と日付を特定するよう直したのに、同じ時点依存が story_1 に残っている（「11月4日の投稿」等にそろえる必要がある）。",
-  "キャプション③の「2027年1月1日前に結び、4月1日前に代金を受け取った定期供給契約は8%のままになる取扱いあり」は、Q&A問1-6の要件である「不特定かつ多数の者に一定の周期で継続して供給する契約」であることと「税率1%を前提とした契約は除く」を省いており、特定の取引先との継続的な納品契約（前払い）も8%のままになると読んだ食品卸・食品メーカーが誤った税率で請求・申告するおそれがある（文字数に制約のないキャプションなので要件を書き足せる）。"
- ],
+ "reviewed_at": "2026-11-01T18:16:00+09:00",
+ "result": "pass",
+ "issues": [],
  "sources_opened": [
   "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/0026008-127_qa.pdf",
   "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/keika/1DE342E.htm"
  ],
- "recalc": "4000万円×1%=40万円、2800万円×1%=28万円、800万円×10%=80万円、40-28-80=▲68万円（Python Decimal -68.00／float -68.0）。05.jpg・キャプション・factcheck.json と一致。簡易課税ならQ&A問3-6により食品売上税額40万円と同額の仕入税額を計上し差引0円で、06.jpg とも整合",
- "content_hash": "1f9587781af828824e6a9d11166b77cd26b2bfe13ecde9d3b5e7c4f59ce3a085",
+ "recalc": "4000万円×1%=40万円、2800万円×1%=28万円、800万円×10%=80万円、40-28-80=▲68万円（Python Decimal -68.00）。05.jpg・06.jpg・01.jpg・キャプション・factcheck.json と一致。簡易課税ならQ&A問3-6により食品売上税額40万円と同額を仕入税額に計上し差引0円で、06.jpg・キャプションと整合",
+ "content_hash": "5dcd23cd9d4c9051b5a61a0d1519cb48a344e2b35c0c9233bd4413de26211090",
  "media_viewed": {
   "01.jpg": "485ab7fa41dee983a51d220400e13826907d1f2914c77a52c0abcc537f922585",
   "02.jpg": "f11005cf2501ea8abd6e03fa3a1ec9d8fc4bf71f565630e412e84cad7854e3fa",
@@ -23,7 +20,7 @@
   "08.jpg": "4cedbc2fa5142a0c9f452e8e7fba837352589121910c79e13560c646c273a967",
   "09.jpg": "7ca64508f42db0ca6362d490ac1c8866f5503e8cd9aad835434721554b92f01f",
   "10.jpg": "f047d934d5ea7faa71d43592b31f2090dad616e198d7f46f9fbdfcafd0a26a05",
-  "story_1.jpg": "c17ca8ea624b7d7a8edddf37a24e1ca7e84e8ffc01c0ddb4f7ea731ac0f12bf8",
+  "story_1.jpg": "b5d52e4c3c49046c37890f03ef3518ab173abda6d51f0f20c7cc38908861cc56",
   "story_2.jpg": "8a9b1c33d94c2b7aa2d811afcd14b3afe1609c9f6af6add2994e3811c276695b",
   "story_3.jpg": "880e3fd3c6d54037d6eef5f159d7fd60f7a77b82dd9883a32f18014c15f2209e"
  }
