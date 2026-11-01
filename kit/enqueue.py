@@ -6,14 +6,17 @@
 n8n「IG自動投稿_7」が15分ごとにこのファイルを読み、管理シートに登録して承認メールを送る。
 同じ投稿IDを再登録すると（画像URLが変わるので）管理シートの行が更新され、承認メールが再送される。
 """
-import json, re, sys
+import json, re, subprocess, sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from verify import verify  # noqa: E402  公開前の検証ゲート（2026-11-01）
 
 ROOT = Path(__file__).resolve().parent.parent
 REPO_RAW = "https://raw.githubusercontent.com/Taisoi/ig-fujiyama-posts"
 KEYS = ["id", "date", "time", "series", "category", "title", "problem", "angle", "facts", "target", "origin",
         "sources", "score", "score_detail", "poses", "n", "caption", "hashtags", "stories", "check", "threads", "memo",
-        "kind", "story_n", "reel_seconds", "reel_voice", "reel_script"]
+        "kind", "story_n", "reel_seconds", "reel_voice", "reel_script", "verify"]
 
 
 def main():
@@ -26,6 +29,22 @@ def main():
     for pid in ids:
         d = ROOT / "posts" / pid
         meta = json.loads((d / "meta.json").read_text())
+        # 公開前の検証ゲート：その場で検証し直し、合格でなければ登録しない（保留）
+        rep = verify(d)
+        (d / "verify_report.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1))
+        if rep["status"] != "pass":
+            raise SystemExit(f"{pid}: 検証に通らないため保留します（登録しません）\n - " + "\n - ".join(rep["errors"]))
+        # 承認される版（SHAに固定された画像）と、いま検証した版が同じであること
+        diff = subprocess.run(["git", "-C", str(ROOT), "diff", "--name-only", sha, "--", f"posts/{pid}"],
+                              capture_output=True, text=True)
+        if diff.returncode != 0:
+            raise SystemExit(f"{pid}: コミット {sha[:8]} と比べられません（保留）: {diff.stderr.strip()}")
+        changed = [f for f in diff.stdout.split() if not f.endswith("verify_report.json")]
+        if changed:
+            raise SystemExit(f"{pid}: 検証した素材とコミット {sha[:8]} の素材が違います（保留）: {changed}")
+        meta["verify"] = {"status": "pass", "hash": rep["content_hash"], "checked_at": rep["checked_at"],
+                          "stage": rep.get("stage", ""), "recheck_url": rep.get("recheck_url", ""),
+                          "stage_checked_at": rep.get("stage_checked_at", "")}
         if meta.get("kind") == "reel":
             # リール：reel.mp4 と reel_cover.jpg が必要。n は1とする
             for f in ("reel.mp4", "reel_cover.jpg"):
