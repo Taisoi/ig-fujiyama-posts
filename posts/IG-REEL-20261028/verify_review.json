@@ -1,0 +1,22 @@
+{
+ "reviewer": "independent-verifier",
+ "reviewed_at": "2026-11-01T18:33:30+09:00",
+ "result": "hold",
+ "issues": [
+  "リール3シーン目（約10〜16秒）の字幕と読み上げ「仕入などで払ったのは600万円」は、架空の例では仕入・外注・家賃などの支払額が6,000万円で600万円はそれにかかる消費税なのに「払った金額が600万円」と読める表現になっており、仕入額6,000万円が動画のどこにも出ないため、視聴者が自社で「売上×10%−仕入などの支払総額」と誤って計算するおそれがあるので「仕入などにかかる消費税（払った分）600万円」等、消費税額であることと仕入6,000万円が分かる表現に直す必要がある。"
+ ],
+ "sources_opened": [
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6303.htm",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6451.htm",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6609.htm"
+ ],
+ "recalc": "預かり 1億円×10%＝1,000万円／支払分 6,000万円×10%＝600万円／納付 1,000−600＝400万円／利益 1億−6,000万−3,000万＝1,000万円、400/1,000＝4割／国税分 400×7.8/10＝312万円（48万円超400万円以下→年1回、No.6609）／中間 312×6/12＝156万円＋地方 156×22/78＝44万円＝200万円／積立 400÷12＝33.33万円→1万円未満切上げ34万円（34×12＝408万円≧400万円）。いずれも元カルーセルIG-ACC-20261026・キャプションと一致。reel.jsonのsayとvoice.jsonの文は8件すべて一致、動画49.4秒・1080x1920、長い無音なし。",
+ "content_hash": "03ef0fc2a3976de4d265f37af313e36010f6d020e198fad1da04c91fe915c0da",
+ "media_viewed": {
+  "reel.mp4": "見た",
+  "reel_cover.jpg": "97db70985d12258c79fe93c1b7a49bb7fcfd73509c20ed35550be143aadae838",
+  "story_1.jpg": "3eb9b2c39527f4de28f8a8481f44f84a0e8c0be2b11bbb7fe75c6239e9ab623b",
+  "story_2.jpg": "8c4314b89a0c3be7dd1880da5e290514c7154170a33ce2cee548fc7147660cc3"
+ }
+}
