@@ -1,0 +1,34 @@
+{
+ "reviewer": "independent-verifier",
+ "reviewed_at": "2026-11-01T18:31:00+09:00",
+ "result": "hold",
+ "issues": [
+  "factcheck.json の S2 のURL（https://www.nta.go.jp/publication/pamph/hojin/kaisei_gaiyo2011/pdf/qa.pdf）は国税庁の「指定されたページを表示できませんでした」エラーページで開けないのに fetched:true と記録されている。正しいのは meta.json に書かれた 1112kaisei_faq.pdf で、別表第十の6年0.333・2年1.000はそちらで確認できた。あわせて、04.jpg に出典として載せた平成19年Q&A Q7（月割り）が factcheck.json の sources と claims に入っていない。",
+  "07.jpg の見出し「4年落ち300万円でも今期は50万円」は、定率法（2年の償却率1.000）で計算したときだけ成り立つ数字。それなのに、この面には「定率法」「法人」「3月決算・2月に使い始め」のどれも書かれておらず、注記は「※架空の例」だけ。定額法（2年の償却率0.500）で計算すると25万円になり、個人事業者は通常こちらに当たる。05.jpg・06.jpg と同じように、条件の注記をこの面にも入れる必要がある。"
+ ],
+ "sources_opened": [
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/pdf/2100_01.pdf",
+  "https://www.nta.go.jp/publication/pamph/hojin/kaisei_gaiyo2011/pdf/qa.pdf",
+  "https://www.nta.go.jp/publication/pamph/hojin/kaisei_gaiyo2011/pdf/1112kaisei_faq.pdf",
+  "https://www.nta.go.jp/law/joho-zeikaishaku/hojin/h19/genkaqa.pdf",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5404.htm",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2106.htm"
+ ],
+ "recalc": "300×0.333＝99.9万円（償却保証額は300×0.09911＝29.733万円で、これを上回るので通常の償却率を使う）。99.9×2/12＝16.65万円で、四捨五入すると約17万円。16.65×30%＝4.995万円で約5万円。中古は（6−4）＋4×20%＝2.8年で、1年未満を切り捨てて2年。300×1.000×2/12＝50万円。参考：定額法なら2年の償却率0.500で300×0.5×2/12＝25万円、新車を定額法（6年の償却率0.167）で計算すると8.35万円。画像・キャプション・件名の数字は互いに一致している。",
+ "content_hash": "f9e121c9e8292a98e3e07a231083c771efeaba4fdc01c29a24f0556b23149c31",
+ "media_viewed": {
+  "01.jpg": "6111c24693fa3870ef07959a0890c84d2a8c96c4d8255551ab2a6d25fec2e1f7",
+  "02.jpg": "8b46bf111635001d7dea49916531024950f607d749d0fbe9b8837cd087a7e32d",
+  "03.jpg": "70ce1bf860442b0c7c35dfe2884b5cec22b8a1bbcac7bf0acc243a6553418008",
+  "04.jpg": "b641dcb3060d7f8dac2c601c6b620e89deecc937188eda56b2962bf9d8b2a33a",
+  "05.jpg": "f79a3d87be46358fd03fec508dbecc61844666dd79ee158cea09c5162e7ac4cd",
+  "06.jpg": "e47e78c3f7ce94dbc12d75e68e02d181742ab8b88a8d1e23665a3e5b1e3b35f1",
+  "07.jpg": "a10a557e29c08d5fb05e2a6e4d150b90cc732975b4df4a51c5c5ef1abdfa55b8",
+  "08.jpg": "634e4c8e4d3c9c61bc05112db1c48edce1daec0e63f3fe1dd88625a703d4577b",
+  "09.jpg": "a143d6bd222427ec00472cef547f1aaae60edcda96cf960f44fb728939f8cc98",
+  "10.jpg": "cd02a7aad9b33e0851e0fa942769c695d57e8a4faadc2f7f2de177062a0c2a02",
+  "story_1.jpg": "122812e14a4d3c5eafaf36e5e4bd510fd0a344ea9191fdca7a5b3c623618fd5e",
+  "story_2.jpg": "798c5caf6aaec89fdc94152480c81b0afe369278c595b0838cbc6aa10c2533bc",
+  "story_3.jpg": "d74d9b5484e06bcefbed520a69ed0550d7e5c9a88b25442910bde8dacfbbecd0"
+ }
+}
