@@ -1,0 +1,31 @@
+{
+ "reviewer": "independent-verifier",
+ "reviewed_at": "2026-11-01T21:30:44Z",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/reel.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/meta.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/story.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/factcheck.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/voice/voice.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/voice/05.wav (silencedetect)",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/voice/06.wav (silencedetect)",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/reel_report.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/story_report.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261102/reel.json",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/reel_cover.jpg",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/story_1.jpg",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/story_2.jpg",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/reel_contact.png",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261105/reel.mp4 (16秒・20秒・23秒・25秒のコマ)"
+ ],
+ "content_hash": "1c4bd5304286615870218515c0f5ba7c8a792a26f9343857ea2043cb06e82692",
+ "media_viewed": {
+  "story_1.jpg": "3bd35671f31eb3dc9e447793ae85045ba7839c8c2b246886f7d0b263bf3bdf39",
+  "story_2.jpg": "3dd1adc8f027b170f4ed0adfa14e307f5ccf3b9e72762a7a1a601e3b8b79eec1",
+  "reel.mp4": "見た",
+  "reel_cover.jpg": "af09b1ecb0fc81dfa35d5297fede97dfe5275b889e3b36be19ac043f05eab944"
+ },
+ "notes": "再検証（前回 hold の4点はすべて解消）。①冒頭は「損失は10億円。4度、死にかけました。」で数字から始まり、10億円と会計・財務を因果で結び付けていない（タイトルも同様）。②シーン4の読み上げ・字幕に「会計と財務を学んでいなかったため」が入り、4カ国展開が原因と読める形は解消。③全シーンで字幕・画面の文字・読み上げ（voice.json）が一致。④本人の言葉は IG-REEL-20261102 シーン6の say と同じ文言「数字は過去を記録するためだけのものではありません。未来を設計するための道具です。」に直り、5・6シーンに分割。voice/05.wav は 3.40〜3.70秒、06.wav は 0〜0.30秒が無音で、分割位置で言葉は切れていない。キャプションも同じ文言。使っている事実は許可リスト5点と本人の録音の言葉だけで、国名・経緯・会話・許可リスト外の数字はない。誘導先はプロフィールのリンクのメルマガ「経営ノート通信」だけで、LINE・URLはない。キャプションの最後から2行目は指定文どおり、最後の行は『見ている』『まだ』の二択。禁止語・相対日付・不安をあおる表現はない。表紙、ストーリーズ2枚、コンタクトシート、動画のコマに文字の欠け・はみ出しはない（20秒のコマはシーン切り替えのクロスフェード中）。reel_report.json と story_report.json の warnings は空。動画37.56秒とストーリーズ1枚目の「38秒」は四捨五入で一致"
+}
