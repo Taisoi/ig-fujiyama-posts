@@ -1,0 +1,8 @@
+{"id":"IG-DIAG-20261106","series":"diagnosis","frames":[
+ {"type":"ask","label":"今日の投稿【架空事例】","pose":"n44",
+  "title":"2店舗目を出したら<br>1号店が<span class=\"em\">減益</span>？","sub":"美容室D社の<span class=\"em\">決算書診断</span>"},
+ {"type":"points","pose":"n36","heading":"原因は<br><span class=\"em\">3つ</span>",
+  "items":["店長が抜けて客数が1割減","家賃・人件費は減らない","新店は1年目から赤字"]},
+ {"type":"cta","pose":"n41","heading":"チェックリストは<br><span class=\"em\">最新の投稿</span>で",
+  "lines":["保存して出店前に見返す","無料メルマガ「経営ノート通信」"],"button":"プロフィールの<br>リンクから"}
+]}
