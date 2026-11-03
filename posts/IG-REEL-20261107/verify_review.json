@@ -1,0 +1,22 @@
+{
+ "reviewer": "independent-verifier",
+ "reviewed_at": "2026-11-04T00:24:57+09:00",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6303.htm",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6451.htm",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6609.htm"
+ ],
+ "recalc": "預かり 1億円×10%＝1,000万円／払った消費税 6,000万円×10%＝600万円／納付 1,000−600＝400万円（No.6101 差し引き、No.6303 10%＝国7.8%＋地方2.2%）／利益 1億−6,000万−3,000万＝1,000万円、400/1,000＝4割／国税分 400×7.8/10＝312万円（48万円超400万円以下→年1回、地方消費税を含まない、No.6609）／中間 312×6/12＝156万円＋地方 156×22/78＝44万円＝200万円／積立 400÷12＝33.33万円→1万円未満切上げ34万円（34×12＝408万円）。給与等は課税仕入れに当たらない（No.6451）。2026-11-04に4資料を開き直し、記述は現在も有効。元カルーセルIG-ACC-20261026（4・6・7・8枚目）の数字と字幕・画面・ストーリーズ・キャプションが一致。reel.json/story.json/meta.jsonのキャプションはIG-REEL-20261028と同一（差分はid・date・check・memoのみ）。画像（reel_cover・story_1・story_2）は前回検証時と同じハッシュ。音声：voice.jsonは8行で、読み上げ文は「ねんいっかい」「さんじゅうよんまんえん」等かな表記に修正済み。voice/01〜08.wavを動画音声と相互相関で照合し、8本とも新動画内に相関0.94〜0.98で順番どおり（0.2s〜45.6s）入っていること、旧動画（IG-REEL-20261028）とは相関0.15以下で音声が差し替わっていることを確認。動画51.3秒・1080x1920・H.264/AAC。注記：meta.json checkの「動画44.9秒」は旧版からの記載で、実尺は51.3秒（reel_report.jsonも51.3）。公開面には影響しない内部メモのため不合格理由とはしない。",
+ "content_hash": "6c74f3e429d5b62869ddc90107160ba18cdd800242a105b89c3af71980e5151f",
+ "media_viewed": {
+  "reel.mp4": "見た（9コマ抽出・reel_contact.pngで全8シーン確認）",
+  "reel_cover.jpg": "97db70985d12258c79fe93c1b7a49bb7fcfd73509c20ed35550be143aadae838",
+  "story_1.jpg": "3eb9b2c39527f4de28f8a8481f44f84a0e8c0be2b11bbb7fe75c6239e9ab623b",
+  "story_2.jpg": "8c4314b89a0c3be7dd1880da5e290514c7154170a33ce2cee548fc7147660cc3",
+  "reel_contact.png": "74af01d0e932c95be3cb727f176968845ed63646682c74fdd2a5d087093ae3cb",
+  "story_contact.png": "3bcfdb5b099fd14dcaf413c5f6b3632e32cba6bef248e2de8402aedfdf78f4df"
+ }
+}
