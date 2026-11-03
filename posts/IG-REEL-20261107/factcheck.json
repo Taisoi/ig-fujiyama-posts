@@ -1,0 +1,106 @@
+{
+ "sources": [
+  {
+   "id": "S1",
+   "title": "国税庁 No.6101 消費税の基本的なしくみ",
+   "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+   "checked_at": "2026-11-01",
+   "locator": "売上の消費税額から仕入の消費税額を差し引く",
+   "fetched": true
+  },
+  {
+   "id": "S2",
+   "title": "国税庁 No.6303 税率",
+   "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6303.htm",
+   "checked_at": "2026-11-01",
+   "locator": "10%（国7.8%・地方2.2%）",
+   "fetched": true
+  },
+  {
+   "id": "S3",
+   "title": "国税庁 No.6451 課税仕入れ（給与等は対象外）",
+   "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6451.htm",
+   "checked_at": "2026-11-01",
+   "locator": "給与等の支払は課税仕入れに当たらない",
+   "fetched": true
+  },
+  {
+   "id": "S4",
+   "title": "国税庁 No.6609 中間申告",
+   "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6609.htm",
+   "checked_at": "2026-11-01",
+   "locator": "48万円超400万円以下は年1回（国税分）",
+   "fetched": true
+  }
+ ],
+ "claims": [
+  {
+   "text": "差し引き計算",
+   "source": "S1"
+  },
+  {
+   "text": "税率10%",
+   "source": "S2"
+  },
+  {
+   "text": "給与に消費税なし",
+   "source": "S3"
+  },
+  {
+   "text": "年1回の中間納付",
+   "source": "S4"
+  }
+ ],
+ "numbers": [
+  {
+   "label": "納める消費税",
+   "expr": "10000*0.1-6000*0.1",
+   "value": 400,
+   "kind": "架空例",
+   "conditions": [
+    "架空"
+   ],
+   "display": [
+    "400万円"
+   ]
+  },
+  {
+   "label": "中間納付",
+   "expr": "400*7.8/10/2*(1+22/78)",
+   "value": 200,
+   "kind": "架空例",
+   "conditions": [
+    "例の会社"
+   ],
+   "display": [
+    "200万円"
+   ]
+  },
+  {
+   "label": "毎月の積立",
+   "expr": "round(400/12+0.5)",
+   "value": 34,
+   "kind": "架空例",
+   "conditions": [
+    "例の会社"
+   ],
+   "display": [
+    "34万円"
+   ]
+  }
+ ],
+ "verified_values": [
+  "1,000万円",
+  "10%",
+  "1万円",
+  "1億円",
+  "200万円",
+  "3,000万円",
+  "33.3万円",
+  "34万円",
+  "400万円",
+  "6,000万円",
+  "600万円"
+ ],
+ "verified_dates": []
+}
