@@ -1,0 +1,148 @@
+{
+ "no_external_facts": true,
+ "sources": [],
+ "claims": [],
+ "numbers": [
+  {
+   "label": "1号店の売上（前期）",
+   "expr": "1000*5000*12/10000",
+   "value": 6000,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "6,000万円"
+   ]
+  },
+  {
+   "label": "1号店の売上（当期）",
+   "expr": "900*5000*12/10000",
+   "value": 5400,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "5,400万円"
+   ]
+  },
+  {
+   "label": "売上の減少",
+   "expr": "6000-5400",
+   "value": 600,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "600万円"
+   ]
+  },
+  {
+   "label": "材料費の減少",
+   "expr": "600*0.10",
+   "value": 60,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "60万円"
+   ]
+  },
+  {
+   "label": "1号店の利益の減少",
+   "expr": "600-60",
+   "value": 540,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "540万円"
+   ]
+  },
+  {
+   "label": "利益の減少率",
+   "expr": "540/1000*100",
+   "value": 54,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "54%"
+   ]
+  },
+  {
+   "label": "1号店の利益（当期）",
+   "expr": "1000-540",
+   "value": 460,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "460万円"
+   ]
+  },
+  {
+   "label": "2号店の利益",
+   "expr": "2400-2800",
+   "value": -400,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "400万円"
+   ]
+  },
+  {
+   "label": "営業利益（前期）",
+   "expr": "1000-400",
+   "value": 600,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "600万円"
+   ]
+  },
+  {
+   "label": "営業利益（当期）",
+   "expr": "460-400-400",
+   "value": -340,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "340万円"
+   ]
+  },
+  {
+   "label": "本部の費用",
+   "expr": "400",
+   "value": 400,
+   "kind": "架空例",
+   "conditions": [
+    "D社"
+   ],
+   "display": [
+    "400万円"
+   ]
+  }
+ ],
+ "verified_values": [
+  "10%",
+  "5,000円",
+  "2,400万円",
+  "2,800万円",
+  "1,000万円"
+ ],
+ "verified_dates": [],
+ "note": "元の投稿 IG-DIAG-20261106 の架空事例の数字をそのまま使用（新しい事実なし）"
+}
