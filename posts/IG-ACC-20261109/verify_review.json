@@ -1,0 +1,28 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20150515-01.html",
+  "https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20141203.html",
+  "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08",
+  "https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/",
+  "https://www.mhlw.go.jp/hourei/doc/tsuchi/T260216S0101.pdf"
+ ],
+ "content_hash": "3f2768ab8ec5ef6284da9d54c394c4ccc6051787b1fa4e6fa5701ecd776a3c4b",
+ "media_viewed": {
+  "01.jpg": "e98addcd07b14facc6f3b54fb56effc9066221f3943a06c6a546710154c5699c",
+  "02.jpg": "e18cf8f8d1c3da7b6f56207170116672ac50e485ca2bf9a0dc727fb0a205b56a",
+  "03.jpg": "af596e011c64d2ecbe454e1245700e7acded1f16a6c3aa3693e330a29c60075b",
+  "04.jpg": "1bc0f2f2774844090b8d70d320e561e15eb907e030bc723870df8b38d7d9f599",
+  "05.jpg": "4c0ab42919ddac8465b13f462dd201be103cba299b68f7de0bfe3ae956554af8",
+  "06.jpg": "91542898dfbd77ee452a19f78f799ce863910f521bef56bcf110556d2b835cbc",
+  "07.jpg": "93105247c615ced86a8c5e15d6b28faf7bbbd2be09e8c3a196c929bd54a579b9",
+  "08.jpg": "a4b7bec6ca81a94c19d416f43a4b77ced25f862d745b6a3192cd95fbcd6ac932",
+  "09.jpg": "ce31888e37ef7151f784f8bcc0f546223fd214f99438dd399bb8005bdf3412a5",
+  "10.jpg": "c4d5dd5ec11b24177d0aaee8b7be359a1df4d654c0fe976b6b541a9b375c6595",
+  "story_1.jpg": "a7ab7db3dc3101d2b399ea05b5be010015e380a14d05d8530de12379d155d7d4",
+  "story_2.jpg": "1705a1e507c992fffeb6fb8ecae47c425b731bdc7b3868858918e63fd6e58381",
+  "story_3.jpg": "81aeccfd868d27a8d1e6576c3a333385a9f46a70ba6987befcaa5e0970d3145b"
+ }
+}
