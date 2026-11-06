@@ -1,0 +1,163 @@
+{
+ "sources": [
+  {
+   "id": "S1",
+   "title": "日本年金機構「厚生年金保険の保険料」（更新日2026年9月30日）",
+   "url": "https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20150515-01.html",
+   "checked_at": "2026-11-06",
+   "locator": "賞与にかかる保険料（標準賞与額は1千円未満切捨て・1回150万円上限、事業主と被保険者が半分ずつ）、保険料率18.3%で固定",
+   "fetched": true
+  },
+  {
+   "id": "S2",
+   "title": "日本年金機構「従業員に賞与を支給したときの手続き」（更新日2026年10月6日）",
+   "url": "https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20141203.html",
+   "checked_at": "2026-11-06",
+   "locator": "賞与支払日から5日以内、健康保険は年度の累計額573万円",
+   "fetched": true
+  },
+  {
+   "id": "S3",
+   "title": "協会けんぽ「令和8年度都道府県単位保険料率」",
+   "url": "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08",
+   "checked_at": "2026-11-06",
+   "locator": "東京都 令和8年度 9.85%（令和8年3月分から）、子ども・子育て支援金0.23%は令和8年4月分から",
+   "fetched": true
+  },
+  {
+   "id": "S4",
+   "title": "協会けんぽ「令和8年度の協会けんぽの保険料率」（都道府県ごとの保険料率のページ）",
+   "url": "https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/",
+   "checked_at": "2026-11-06",
+   "locator": "東京都9.85%、介護保険料率1.62%（40歳から64歳まで）、子ども・子育て支援金率0.23%（令和8年4月分から）",
+   "fetched": true
+  },
+  {
+   "id": "S5",
+   "title": "厚生労働省・こども家庭庁「子ども・子育て支援金に関するQ&A」（令和8年2月12日）",
+   "url": "https://www.mhlw.go.jp/hourei/doc/tsuchi/T260216S0101.pdf",
+   "checked_at": "2026-11-06",
+   "locator": "賞与についても標準賞与額に0.0023を乗じる、合算した率の額を折半",
+   "fetched": true
+  },
+  {
+   "id": "S6",
+   "title": "管理シート「IG自動投稿_管理シート」Threads実績タブ（2026-10-26 19:05 投稿、表示3,030。本文冒頭「利益1,000万円の年に、消費税400万円の納付で慌てた会社があります。」）",
+   "url": "https://www.threads.com/@taik22/post/De9BtZPjLCf",
+   "checked_at": "2026-11-07",
+   "locator": "ストーリーズ2枚目（Threads紹介）の要点の根拠。数字は載せていない",
+   "fetched": true
+  }
+ ],
+ "claims": [
+  {
+   "text": "賞与にも社会保険料（標準賞与額×保険料率、労使折半、1,000円未満切捨て、厚生年金1回150万円上限）",
+   "source": "S1"
+  },
+  {
+   "text": "厚生年金保険料率18.3%",
+   "source": "S1"
+  },
+  {
+   "text": "賞与支払届は支給日から5日以内、健康保険の上限は年度累計573万円",
+   "source": "S2"
+  },
+  {
+   "text": "協会けんぽ東京都の健康保険料率9.85%（令和8年度）",
+   "source": "S3"
+  },
+  {
+   "text": "介護保険料率1.62%、子ども・子育て支援金率0.23%",
+   "source": "S4"
+  },
+  {
+   "text": "支援金は賞与にも0.0023を乗じ、折半",
+   "source": "S5"
+  },
+  {
+   "text": "ストーリーズ2枚目：Threadsの投稿（消費税の納付月に慌てた会社の話）の紹介",
+   "source": "S6"
+  }
+ ],
+ "numbers": [
+  {
+   "label": "会社負担率",
+   "expr": "18.3/2+9.85/2+0.23/2",
+   "value": 14.19,
+   "tolerance": 0.001,
+   "kind": "実例",
+   "display": [
+    "14.19%"
+   ]
+  },
+  {
+   "label": "架空例の賞与合計",
+   "expr": "50*10",
+   "value": 500,
+   "tolerance": 0.01,
+   "kind": "架空例",
+   "conditions": [
+    "東京都",
+    "40歳未満"
+   ],
+   "display": [
+    "500万円"
+   ]
+  },
+  {
+   "label": "架空例の会社負担",
+   "expr": "500*0.1419",
+   "value": 70.95,
+   "tolerance": 0.001,
+   "kind": "架空例",
+   "conditions": [
+    "東京都",
+    "40歳未満"
+   ],
+   "display": [
+    "70.95万円",
+    "71万円"
+   ]
+  },
+  {
+   "label": "架空例の出ていくお金",
+   "expr": "500+500*0.1419",
+   "value": 570.95,
+   "tolerance": 0.001,
+   "kind": "架空例",
+   "conditions": [
+    "東京都",
+    "40歳未満"
+   ],
+   "display": [
+    "571万円"
+   ]
+  },
+  {
+   "label": "架空例の1人あたり賞与",
+   "expr": "50",
+   "value": 50,
+   "kind": "架空例",
+   "conditions": [
+    "東京都",
+    "40歳未満"
+   ],
+   "display": [
+    "50万円"
+   ]
+  }
+ ],
+ "verified_values": [
+  "18.3%",
+  "9.85%",
+  "0.23%",
+  "9.15%",
+  "4.925%",
+  "0.115%",
+  "1.62%",
+  "150万円",
+  "573万円",
+  "1,000円"
+ ],
+ "verified_dates": []
+}

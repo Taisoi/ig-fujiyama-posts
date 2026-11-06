@@ -1,0 +1,12 @@
+{
+ "status": "hold",
+ "errors": [
+  "検証担当が不合格としました: 一次資料S1〜S5を検証担当が開けなかった（WebFetchの許可確認に時間内の応答がなく取得できなかった）。対象：S1 https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20150515-01.html、S2 https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20141203.html、S3 https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08、S4 https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/、S5 https://www.mhlw.go.jp/hourei/doc/tsuchi/T260216S0101.pdf。厚生年金18.3%・協会けんぽ東京都 令和8年度9.85%・子ども・子育て支援金0.23%・介護保険料率1.62%（40〜64歳）・賞与にもかかり労使折半であることを、一次資料で独立に確かめられていない。PRODUCTION.md 2-A-6により保留。WebFetchの許可が得られる状態で検証担当にもう一度見せること / factcheck.json の S6 の checked_at が「2026-11-07」で、検証日（2026-11-06）より後の日付になっている。実際の確認日に直すこと。また S6 の url は threads.com だが、根拠として読んだのは管理シートのThreads実績タブなので、title/locator にその旨が書いてある点は可。数字の誤りではない"
+ ],
+ "notes": [],
+ "content_hash": "fa8fbbf5660544720520e02a115f84bf5e0637702f6473a90b1b0da779d9a27f",
+ "checked_at": "2026-11-06T21:29:24+00:00",
+ "stage": "",
+ "recheck_url": "",
+ "stage_checked_at": ""
+}
