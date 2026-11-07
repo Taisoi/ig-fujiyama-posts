@@ -1,0 +1,35 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "notes": [
+  "前回hold理由の解消を確認：04.jpg注記は「赤字は申告件数から黒字申告件数を引いて計算（四捨五入）」で「−」なし、本文は「赤字の申告が多数派です」",
+  "07.jpg：条件「赤字の年に青色申告」、その後「毎年続けて申告」、期間10年、本文「（中小法人等は全額まで）」、注記に帳簿保存・2018年4月以後開始年度。タックスアンサーNo.5762と一致。キャプションにも連続申告・帳簿保存を追記済み",
+  "checked_at 2026-11-08 はJSTの当日（TZ=Asia/Tokyo date で 2026-11-08 06:29 JST を確認）のため問題なしとして取り下げ",
+  "再撮影でハッシュが変わったのは04.jpg・07.jpgのみ。他11枚は前回目視したものとハッシュ同一",
+  "数字の再計算：1220/3267=37.34%、3267-1220=2047千件(62.66%)、171046億/8355千円=2047.2千件で整合、835.5万円、855.6万円、17.1兆円、118.9兆円、1189000/1023381=116.18%。すべて別表2・p.1と一致",
+  "参考（非公開欄）：meta.json の内部メモ check 欄に計算式の「−」が残るが、画像・キャプション・件名・ハッシュタグには無い",
+  "render_report・story_report の warnings は0件"
+ ],
+ "sources_opened": [
+  "https://www.nta.go.jp/information/release/kokuzeicho/2026/hojin_shinkoku/pdf/hojin_shinkoku.pdf",
+  "https://www.nta.go.jp/information/release/kokuzeicho/2026/hojin_shinkoku/index.htm",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5762.htm"
+ ],
+ "content_hash": "d9b81510cf1b76ad24f05b7b7e1e9e05cd85df7c2482ae737189885d37ad58b0",
+ "media_viewed": {
+  "01.jpg": "4aacb3ec07b42ce8063d41f0d277c4b0f92a950740f9e4d3d93ba6ad7d826538",
+  "02.jpg": "97ed5259dfb99ca387c9756a41f587700d5e7ae36275fcc372cef975ba2a15e2",
+  "03.jpg": "9cc04dfb56e8c7273a7daf20920a72d3f9d6e596afc2d6725308010abd60c614",
+  "04.jpg": "722978ec8f32dbde5049af4d5e91954644c0b1ea8c29a5a44f9a6cdf433db8ae",
+  "05.jpg": "fc33546abc35afa0eb017e34e6c734c10aff7eef8cb62af6525c3a95f2b46970",
+  "06.jpg": "ddf29837d687d2c746deb563857b23d31b90eb0c4d7ec7262606e694b7a64efd",
+  "07.jpg": "c49e07c866b565e5badcd057b96d7f16b585134a1750d9681178f575cc0f90fd",
+  "08.jpg": "3f6e6479810fe6c9c31788c5403c3da7287a1b0c2c3d92735ce43f0143fb841d",
+  "09.jpg": "3e1c6c5f8804bb46b4fd5103f1b6fa412c7376cb16a47ebeae1568e5f690af49",
+  "10.jpg": "a751266a1b428a7d90f7407a49b98ba76d89031989cac31eecbc56fd94e0f9e4",
+  "story_1.jpg": "7eba6b468d6aa7a4e6dba7ee77097fc54ea552f959e5830ae34d3824d9694a39",
+  "story_2.jpg": "c98613c02e7eac1e2ed71b0c6bfb71010157c29452ff6ffa557188aecc848010",
+  "story_3.jpg": "0212ee01afab8ef9b8989ac9b7375466e3ee01c26d54f0dc028779e2efdb956b"
+ }
+}
