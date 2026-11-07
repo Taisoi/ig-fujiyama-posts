@@ -1,0 +1,28 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20150515-01.html",
+  "https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20141203.html",
+  "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08/index.html",
+  "https://www.mhlw.go.jp/hourei/doc/tsuchi/T260216S0101.pdf"
+ ],
+ "notes": [
+  "2026-11-08 JST確認。S1：厚生年金18.3%固定・賞与も事業主と被保険者が半分ずつ・標準賞与額は1千円未満切捨て1回150万円上限（更新日2026年9月30日）",
+  "S2：支給日より5日以内に賞与支払届・健康保険は年度累計573万円（更新日2026年10月6日）",
+  "S3：東京都9.85%（令和8年3月分から）・子ども・子育て支援金0.23%（令和8年4月分から）・介護1.62%（40〜64歳）",
+  "S5：賞与も標準賞与額に0.0023を乗じる・一般保険料率と支援金率の合算額を折半（令和8年2月12日）",
+  "S4（https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/）はURLが許可されず直接開けなかったが、記載内容（9.85%・1.62%・0.23%）はS3で同じ内容を確認済み",
+  "Python再計算：18.3/2+9.85/2+0.23/2=14.19%、50万円×10人=500万円、500×14.19%=70.95万円（約71万円）、500+70.95=570.95万円（約571万円）。元のカルーセルIG-ACC-20261109と一致",
+  "reel_cover.jpg・reel_contact.png・story_1.jpg・story_2.jpg・動画の3/20/31/36秒のコマを目視。金額のある画面（1・5・6シーン、表紙、ストーリー1枚目）に架空例（東京都・40歳未満）、14.19%の画面に協会けんぽ東京都・40歳未満を表示",
+  "禁止表現（強い・〜なんです・*・△・−・相対日付・不安をあおる表現）なし。キャプション最後の2行は所定の形。ストーリーズ2枚目はThreads紹介で数字なし"
+ ],
+ "content_hash": "03e4a3919366c4e28673b2ca6e3d534f017705b278e9aa6b1df0c54fde9a5772",
+ "media_viewed": {
+  "story_1.jpg": "818e7fd1bc5c4a0089260ce6e40d2337cfe443674289a4b8aff669e3e2099d21",
+  "story_2.jpg": "dda20b258af21c25a4d1b3ffb7d06a05d99bd836f9a031eb27c96e6282b067bb",
+  "reel.mp4": "8c225aae946157c1113ea8dc513ff57c92f041a567136bbb1777ed83dc7f00b7",
+  "reel_cover.jpg": "ceeadd65e3f5811ce6003d70d3410295de7c492105c6b9f14b0ca9e8a72486b0"
+ }
+}
