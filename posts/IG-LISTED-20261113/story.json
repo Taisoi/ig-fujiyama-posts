@@ -1,0 +1,8 @@
+{"id":"IG-LISTED-20261113","series":"listed","frames":[
+ {"type":"ask","label":"11月13日の投稿","pose":"n44",
+  "title":"売上が<span class=\"em\">14%</span>増えて<br>なぜ赤字に？","sub":"答えは<span class=\"em\">粗利と経費の伸び</span>に"},
+ {"type":"points","pose":"pose_D","heading":"決算短信の数字<br><span class=\"em\">3つ</span>",
+  "items":["営業収益は＋14.0%","粗利＋197.9億・経費＋232.4億","営業利益は▲32.8億円"]},
+ {"type":"cta","pose":"p03","heading":"チェックリストは<br><span class=\"em\">11月13日の投稿</span>で",
+  "lines":["保存して月末に見返す","無料メルマガ「経営ノート通信」"],"button":"プロフィールの<br>リンクから"}
+]}
