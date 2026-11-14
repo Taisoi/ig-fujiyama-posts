@@ -1,0 +1,33 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20150515-01.html",
+  "https://www.nenkin.go.jp/service/kounen/hokenryo/ryogaku/ryogakuhyo/20200825.files/R08ryougaku.pdf",
+  "https://www.nenkin.go.jp/shinsei/kounen/tekiyo/hoshu/20141224.files/0000027814D67YcB0BxR.pdf",
+  "https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/",
+  "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08",
+  "https://www.mhlw.go.jp/hourei/doc/tsuchi/T260216S0101.pdf",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm"
+ ],
+ "content_hash": "98f29d7ad54eadcf6a30bb742e33e351e7c607cb6d5fb2bb048e17fc3d48ed7c",
+ "media_viewed": {
+  "story_1.jpg": "f42b075feec6750046a11ad59eb83461fef1973d4e35d4fb753c50f5e8a316bf",
+  "story_2.jpg": "95c2538ad1db1739e5d1017d4027af96d8a6af05b42b9ce4f6aad948cf875436",
+  "reel.mp4": "99f1d155516fa120514dfda5e769577b4db22682947c610e6ab79992c42115a7",
+  "reel_cover.jpg": "5d5ae8a76a3dd0cd3af0179cce88779ebcb7f67f0866f17f5bc4d280513fd1fd"
+ },
+ "frames_viewed": [
+  "reel1118_5s.jpg",
+  "reel1118_14s.jpg",
+  "reel1118_18s.jpg",
+  "reel1118_22s.jpg",
+  "reel1118_30s.jpg",
+  "reel1118_38s.jpg",
+  "reel1118_43s.jpg",
+  "reel1118_48s.jpg",
+  "reel_contact.png"
+ ],
+ "reviewed_at": "2026-11-15"
+}

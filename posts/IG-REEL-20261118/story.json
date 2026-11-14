@@ -1,0 +1,21 @@
+{
+ "id": "IG-REEL-20261118",
+ "series": "accounting",
+ "frames": [
+  {
+   "type": "reel",
+   "heading": "架空例・東京都40歳未満<br>報酬＋10万円で<span class=\"em\">月＋約11.4万円</span>",
+   "sub": "フジヤマが音声で解説します"
+  },
+  {
+   "type": "cta",
+   "pose": "n47",
+   "heading": "社長の報酬、<br><span class=\"em\">会社の負担</span>まで見た？",
+   "lines": [
+    "図解はプロフィールの投稿で",
+    "無料メルマガ「経営ノート通信」"
+   ],
+   "button": "プロフィールの<br>リンクから"
+  }
+ ]
+}
