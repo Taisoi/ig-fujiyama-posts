@@ -1,0 +1,25 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "https://www.boj.or.jp/statistics/pi/cgpi_release/cgpi2610.pdf"
+ ],
+ "content_hash": "cdd03cbae7e3c866f9753ab5ba71c9773493e6aa8fbe49aa5f94f53df1188904",
+ "media_viewed": {
+  "01.jpg": "426c27418805a6930a3c8219fd07f7f474daef8575f045d1d07fc56da77bdbf8",
+  "02.jpg": "6b55458143d90b90089a09d89dee7bff139a518939b4775e2e80a7abb11b6a4e",
+  "03.jpg": "24fcaf5d5ae47ba6314810c314ff2ea93075076df428a95925d69defbf12e369",
+  "04.jpg": "0d284dca26640ccd286be66f21f877dabfd38c89534d9be237a12e4996d7f000",
+  "05.jpg": "848339510dd5b6a26905742184e96d88183006f4b11860bf45d81aecb63c171e",
+  "06.jpg": "ce88fcefad95c3abccf18b27463fb358fb71ccbdaac8f33f1abd83a67d4c7b36",
+  "07.jpg": "6dafa002e61d1e0c98dd67f8f900e95686cd97add4594f1bccb7c7d9b5413c35",
+  "08.jpg": "354415fca0335821fda55dd3abe557cd0ba8f7c944ad5c539a3ad37d6d70fb4f",
+  "09.jpg": "7ac3302f20ae1c340c6d2040cfe59d0fdf060ae177ab1a92f2ce2d6b9490c84b",
+  "10.jpg": "febf4129240ac6aefbe0b7e08a41cc063eaa40cbdb908fbd9d17abbf5f8ae25c",
+  "story_1.jpg": "b802d82403e384c982a5feb993ada28793f4d7b3e86c0cef253ab19b7bc1402f",
+  "story_2.jpg": "a0628e39e07301bc153ce219cf1a998b23fc2799b9c97837b5eb4480ed95d329",
+  "story_3.jpg": "acb251f46e99c78b0d3345131cc79072ebd0741ff4681420f5e9f5e9da80048b"
+ },
+ "reviewed_at": "2026-11-15"
+}
