@@ -1,0 +1,8 @@
+{"id":"IG-ACC-20261116","series":"accounting","frames":[
+ {"type":"ask","label":"11月16日の投稿","pose":"n07",
+  "title":"役員報酬を上げたら<br>会社の<span class=\"em\">上乗せ</span>はいくら？","sub":"<span class=\"em\">架空例</span>で計算しました"},
+ {"type":"points","pose":"p03","heading":"上げる前に<br><span class=\"em\">3つ</span>確認",
+  "items":["役員報酬にも社会保険料","保険料は4か月目から変わる","改定は期首から3か月以内"]},
+ {"type":"cta","pose":"n29","heading":"チェックリストは<br><span class=\"em\">11月16日の投稿</span>で",
+  "lines":["保存して決算前に見返す","無料メルマガ「経営ノート通信」"],"button":"プロフィールの<br>リンクから"}
+]}

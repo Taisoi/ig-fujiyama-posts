@@ -1,0 +1,31 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20150515-01.html",
+  "https://www.nenkin.go.jp/service/kounen/hokenryo/ryogaku/ryogakuhyo/20200825.files/R08ryougaku.pdf",
+  "https://www.nenkin.go.jp/shinsei/kounen/tekiyo/hoshu/20141224.files/0000027814D67YcB0BxR.pdf",
+  "https://www.kyoukaikenpo.or.jp/g7/cat330/sb3130/r08/",
+  "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08",
+  "https://www.mhlw.go.jp/hourei/doc/tsuchi/T260216S0101.pdf",
+  "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm"
+ ],
+ "content_hash": "a3bc55bc6f43ef52e65fc7e70f1ead9aae0aa474a252987ba2f79e89db85982e",
+ "media_viewed": {
+  "01.jpg": "f83be11fea10cab901981eea15f14ccc8392adbc570bd067cd7c4a21ff6e30e2",
+  "02.jpg": "68a98b5652721bef5da193c923f33d6e1ca33aab964ebc25a0b28634b9a4199b",
+  "03.jpg": "1f59736bae80a0953a0ad1a48dace1e46f765173786262662beaecd8647e89ff",
+  "04.jpg": "9264dc6e69117476c7230c3009c504e827156d50d76a77f0df3ebf6691546375",
+  "05.jpg": "cb4b048ec933cc5f759446249a6ccbd43a07d751892efca35775aa980d7b6119",
+  "06.jpg": "281585e1dca3b0dfa1686df5195ebc1d9045ef1a164fa0a1ef346381e5891991",
+  "07.jpg": "fbbac098b488c8bd6860fc22eacc0734a15fa833e4afeedb993ddcd85d7447c6",
+  "08.jpg": "f05bd7277b3a56f2bbf818ae4cc083f019de330632a67877c29b913870a246a4",
+  "09.jpg": "5e5b20d0f7e3c26531d382ea788b3b48cbe5b4e19dc3ab6ef7c196afff5e8026",
+  "10.jpg": "33c4c075e1e96b5e18dd6739b8591212cad72cd476c40d11ac0aa498c4bce504",
+  "story_1.jpg": "4abf76d7ea5de51f26176332ac26e701f9f4d6acbb982314f67084cfceb0c28c",
+  "story_2.jpg": "aa71b82f8ab6772b573f7e15df1f5df8d552fa9ee37aaa1ec96a8cf754bee884",
+  "story_3.jpg": "cc833e53768f52230f74e1e637075a3b52e9d8abe9b2dc33940ce74de7e9f84b"
+ },
+ "reviewed_at": "2026-11-15"
+}
