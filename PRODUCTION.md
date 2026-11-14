@@ -135,11 +135,15 @@ factcheck.json の書き方（posts/<投稿ID>/factcheck.json）：
 
 ```bash
 python3 kit/verify.py posts/<投稿ID>   # 「合格」でなければここで止めて保留・報告
-git add posts/<投稿ID> && git commit -m "<投稿ID> 画像" && git push origin main
+git fetch origin main && git checkout -B main origin/main   # 作業を始める前に1回（HEAD detached のままにしない）
+git add posts/<投稿ID> && git commit -m "<投稿ID> 画像" && git push origin HEAD:main
 SHA=$(git rev-parse HEAD)
 python3 kit/enqueue.py $SHA <投稿ID>
-git add queue/index.json && git commit -m "<投稿ID> 受付キューに登録" && git push origin main
+git add queue/index.json && git commit -m "<投稿ID> 受付キューに登録" && git push origin HEAD:main
+test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$(git rev-parse HEAD)" && echo 登録OK || echo 登録失敗
 ```
+
+- 2026-11-14 判明：セッション開始時のクローンが「HEAD detached」の状態のことがあり、そのまま `git push origin main` すると投稿がGitHubに届かないのに「Everything up-to-date」と出て成功に見える（11/12〜11/14の3回分が失われ、11/14のリールが出なかった）。push は必ず `git push origin HEAD:main` にし、push のたびに ls-remote のSHAと HEAD が一致するかを確かめる。一致しなければ「登録できた」と報告せず、【登録失敗】として藤山さんに知らせる
 
 - 投稿IDの形式：`IG-<シリーズ>-<YYYYMMDD>`（例：IG-NEWS-20261020）。シリーズは ACC / NEWS / DIAG / LISTED、リールは REEL
 - 同じ投稿IDで画像を作り直したときも、同じ手順で再登録する（管理シートの行が更新され、承認メールが再送される）
