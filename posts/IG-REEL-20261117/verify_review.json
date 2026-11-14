@@ -1,0 +1,24 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "https://www.usmh.co.jp/wp-content/themes/usmh/files/20261009/Ust_20261009_1542.pdf"
+ ],
+ "content_hash": "cc67e4e7689d7030096652158eab1246bd4c4b27b8b653d6e242d0654cc96eec",
+ "media_viewed": {
+  "story_1.jpg": "5c8dfef5daa2d63bd944f3f68922e5b25f2e8e685f6bf2a6db20f32481d48c16",
+  "story_2.jpg": "f0a4e4388b978abf9ebc367c7fc6f5690fe33566a1bcfa972b8b98ea161b6f46",
+  "reel.mp4": "c1e70d5bf61508d9b8363998fddf8d58137b4bad7de55ea0982b5d8881f4d093",
+  "reel_cover.jpg": "e5f76d8398857a667ebae1d866fa94391d46204f1f81aa0927c59e89c9cc4893"
+ },
+ "frames_viewed": [
+  "/tmp/claude-0/reel1117_5s.jpg",
+  "/tmp/claude-0/reel1117_15s.jpg",
+  "/tmp/claude-0/reel1117_22s.jpg",
+  "/tmp/claude-0/reel1117_30s.jpg",
+  "/tmp/claude-0/reel1117_36s.jpg",
+  "/home/claude/ig-fujiyama-posts/posts/IG-REEL-20261117/reel_contact.png"
+ ],
+ "reviewed_at": "2026-11-15"
+}
