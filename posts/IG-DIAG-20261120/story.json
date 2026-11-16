@@ -1,0 +1,33 @@
+{
+ "id": "IG-DIAG-20261120",
+ "series": "diagnosis",
+ "frames": [
+  {
+   "type": "ask",
+   "label": "今日の投稿【架空事例】",
+   "pose": "n08",
+   "title": "社員が辞めるたび<br>お金は<span class=\"em\">いくら</span>出る？",
+   "sub": "設備工事E社の<span class=\"em\">決算書診断</span>"
+  },
+  {
+   "type": "points",
+   "pose": "n36",
+   "heading": "要点は<br><span class=\"em\">3つ</span>",
+   "items": [
+    "求人費が先に出ていく",
+    "引き継ぎ中は給料が2人分",
+    "決算書では見えにくい"
+   ]
+  },
+  {
+   "type": "cta",
+   "pose": "n41",
+   "heading": "チェックリストは<br><span class=\"em\">最新の投稿</span>で",
+   "lines": [
+    "保存して採用前に見返す",
+    "無料メルマガ「経営ノート通信」"
+   ],
+   "button": "プロフィールの<br>リンクから"
+  }
+ ]
+}
