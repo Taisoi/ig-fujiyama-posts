@@ -20,6 +20,8 @@ TOP = 424        # 色ブロック（top 372）の内側52px、最初の文字�
 # リールお知らせの一文は固定（2026-10-26 本人指示：「フジヤマが声で話しています」は不自然なので二度と使わない）。
 # story.json の sub に何が書かれていても、この文言で描画する。
 REEL_SUB = "フジヤマが音声で解説します"
+# 声なしのリール（voice フォルダが無い）では音声と書けないため、字幕の案内にする（2026-11-17 追加）
+REEL_SUB_NOVOICE = "フジヤマが字幕で解説します"
 BANNED = ["声で話しています", "声で話して"]
 
 
@@ -64,7 +66,7 @@ def frame(i, f, series):
                 f'<img src="{cover.as_uri()}" style="width:100%;height:100%;object-fit:cover">'
                 f'<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;background:rgba(30,43,72,.85);display:flex;align-items:center;justify-content:center">'
                 f'<div style="width:0;height:0;border-left:56px solid #fff;border-top:34px solid transparent;border-bottom:34px solid transparent;margin-left:14px"></div></div></div>'
-                f'<div class="z mid fit" style="top:1490px;font-size:46px;text-align:center" data-maxw="888">{REEL_SUB}</div>')
+                f'<div class="z mid fit" style="top:1490px;font-size:46px;text-align:center" data-maxw="888">{REEL_SUB if (Path(f["_dir"]) / "voice").is_dir() else REEL_SUB_NOVOICE}</div>')
         return f'<section class="v st" id="v{i}">{head}{body}</section>'
     raise SystemExit(f"不明なストーリーズの種類: {t}")
 
