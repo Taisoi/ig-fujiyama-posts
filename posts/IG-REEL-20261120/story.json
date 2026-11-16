@@ -1,0 +1,21 @@
+{
+ "id": "IG-REEL-20261120",
+ "series": "news",
+ "frames": [
+  {
+   "type": "reel",
+   "heading": "企業物価<span class=\"em\">＋7.1%</span><br>39秒で解説",
+   "sub": "フジヤマが字幕で解説します"
+  },
+  {
+   "type": "cta",
+   "pose": "n38",
+   "heading": "仕入の単価、<br><span class=\"em\">前年と比べた</span>？",
+   "lines": [
+    "主な品目から確かめる",
+    "無料メルマガ「経営ノート通信」"
+   ],
+   "button": "プロフィールの<br>リンクから"
+  }
+ ]
+}
