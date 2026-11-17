@@ -1,0 +1,78 @@
+{
+ "no_external_facts": true,
+ "sources": [],
+ "claims": [],
+ "numbers": [
+  {
+   "label": "引き継ぎ中の給料の重なり",
+   "expr": "32*2",
+   "value": 64,
+   "kind": "架空例",
+   "conditions": [
+    "E社"
+   ],
+   "display": [
+    "64万",
+    "64万円"
+   ]
+  },
+  {
+   "label": "1人あたり",
+   "expr": "70+32*2",
+   "value": 134,
+   "kind": "架空例",
+   "conditions": [
+    "E社"
+   ],
+   "display": [
+    "134万",
+    "134万円"
+   ]
+  },
+  {
+   "label": "1年5人の合計",
+   "expr": "(70+32*2)*5",
+   "value": 670,
+   "kind": "架空例",
+   "conditions": [
+    "E社"
+   ],
+   "display": [
+    "670万円"
+   ]
+  },
+  {
+   "label": "2人減らした場合",
+   "expr": "(70+32*2)*2",
+   "value": 268,
+   "kind": "架空例",
+   "conditions": [
+    "E社"
+   ],
+   "display": [
+    "268万円"
+   ]
+  },
+  {
+   "label": "営業利益に対する割合",
+   "expr": "(70+32*2)*5/900*100",
+   "value": 74.4,
+   "kind": "架空例",
+   "conditions": [
+    "E社"
+   ],
+   "display": [
+    "7割"
+   ]
+  }
+ ],
+ "verified_values": [
+  "70万",
+  "70万円",
+  "32万円",
+  "3億円",
+  "900万円"
+ ],
+ "verified_dates": [],
+ "note": "元の投稿 IG-DIAG-20261120 の架空事例の数字をそのまま使用（新しい事実なし）"
+}
