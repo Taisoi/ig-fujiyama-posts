@@ -1,0 +1,8 @@
+{"id":"IG-ACC-20261123","series":"accounting","frames":[
+ {"type":"ask","label":"11月23日の投稿","pose":"n44",
+  "title":"10%値引きしたら<br>何個<span class=\"em\">多く</span>売ればいい？","sub":"<span class=\"em\">架空例</span>（粗利率30%）で計算しました"},
+ {"type":"points","pose":"pose_D","heading":"値引きの前に<br><span class=\"em\">3つ</span>確認",
+  "items":["値引きは1個の粗利から引かれる","必要な販売数を先に計算","対象と期間を絞る"]},
+ {"type":"cta","pose":"n29","heading":"チェックリストは<br><span class=\"em\">11月23日の投稿</span>で",
+  "lines":["保存して月末に見返す","無料メルマガ「経営ノート通信」"],"button":"プロフィールの<br>リンクから"}
+]}
