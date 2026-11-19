@@ -1,0 +1,97 @@
+{
+ "no_external_facts": true,
+ "sources": [],
+ "claims": [],
+ "numbers": [
+  {
+   "label": "お金の増減",
+   "expr": "1000+100-300-200-300-400",
+   "value": -100,
+   "kind": "架空例",
+   "conditions": [
+    "架空例"
+   ],
+   "display": [
+    "▲100万円",
+    "100万円"
+   ]
+  },
+  {
+   "label": "税引後の利益",
+   "expr": "1000",
+   "value": 1000,
+   "kind": "架空例",
+   "conditions": [
+    "架空例"
+   ],
+   "display": [
+    "1,000万円"
+   ]
+  },
+  {
+   "label": "売掛金の増加",
+   "expr": "300",
+   "value": 300,
+   "kind": "架空例",
+   "conditions": [
+    "架空例"
+   ],
+   "display": [
+    "300万円"
+   ]
+  },
+  {
+   "label": "在庫の増加",
+   "expr": "200",
+   "value": 200,
+   "kind": "架空例",
+   "conditions": [
+    "架空例"
+   ],
+   "display": [
+    "200万円"
+   ]
+  },
+  {
+   "label": "元金返済",
+   "expr": "400",
+   "value": 400,
+   "kind": "架空例",
+   "conditions": [
+    "架空例"
+   ],
+   "display": [
+    "400万円"
+   ]
+  },
+  {
+   "label": "減価償却費（足し戻し）",
+   "expr": "100",
+   "value": 100,
+   "kind": "架空例",
+   "conditions": [
+    "架空例"
+   ],
+   "display": [
+    "＋100万円",
+    "100万円"
+   ]
+  },
+  {
+   "label": "設備の購入",
+   "expr": "300",
+   "value": 300,
+   "kind": "架空例",
+   "conditions": [
+    "架空例"
+   ],
+   "display": [
+    "▲300万円",
+    "300万円"
+   ]
+  }
+ ],
+ "verified_values": [],
+ "verified_dates": [],
+ "note": "元の投稿 IG-ACC-001（8枚目の表）の架空例の数字をそのまま使用（新しい事実なし）"
+}
