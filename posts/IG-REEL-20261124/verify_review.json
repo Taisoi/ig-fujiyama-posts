@@ -1,0 +1,52 @@
+{
+ "reviewer": "independent-verifier",
+ "reviewed_at": "2026-11-21",
+ "result": "pass",
+ "issues": [],
+ "suggestions": [
+  "story_1.jpg の再生ボタンがサムネイル内の字幕「…1.5倍売る必要が…」に重なっている（上の大きな見出しとサムネイルの小見出し「架空例・粗利率30%の商品」は読めるため軽微）"
+ ],
+ "previous_review": "前回（同日）hold：リールのシーン3〜7の画面に条件「粗利率30%」が無かった。今回、reel.json と描き直した reel.mp4 のコマ（3・9・15・21・27・33・40・46秒）・reel_contact.png で、シーン3「架空例・粗利率30%：売値1,000円・原価700円」、シーン4「架空例・粗利率30%：10%値引き」、シーン5「架空例・粗利率30%・月1,000個」、シーン6「架空例・粗利率30%：元の粗利に戻すには」、シーン7「架空例・粗利率30%：逆に5%値上げなら」を確認し、解消。数字・字幕・読み上げ・キャプションは前回から変更なし。reel_cover.jpg・story_1.jpg・story_2.jpg のハッシュは前回と同じ（シーン1の小見出しは元から「架空例・粗利率30%の商品」）",
+ "checked_ok": [
+  "数字はすべて元の投稿IG-ACC-20261123（post.json 3〜7枚目・caption・factcheck.json）と一致：売値1,000円・原価700円・粗利300円→200円・月1,000個・30万円→20万円・1,500個・1割増の1,100個・5%値上げで350円・約857個・約14%少なく・1.5倍。新しい事実の追加なし",
+  "Pythonで再計算：1000−700＝300、900−700＝200、300×1000＝300,000、200×1000＝200,000、300000/200＝1,500、1000×1.1＝1,100、300000/350＝857.14→約857、1−857.1/1000＝0.1429→約14%、0.3/(0.3−0.1)＝1.5。factcheck.json の式・値もすべて一致",
+  "金額・個数が出る全シーン（1・3〜7）の画面に「架空例」と「粗利率30%」が同じ面にある。シーン2・8は金額なし",
+  "reel.json の字幕（say）・voice.json の読み・動画のコマの字幕が一致",
+  "キャプション：架空例・粗利率30%の条件が金額の近くにある。最後から2行目「詳しい図解とチェックリストはプロフィールの投稿で。保存して月末に見返してください」、最後の行は二択の質問（『済』か『まだ』）。不安をあおる表現・相対日付なし",
+  "story_2.jpg：Threads紹介（現場を任せて1年で何が？／手元資金が減った架空の事例）。金額なしで意図どおり。「架空」の表示あり",
+  "reel_report.json・story_report.json の warnings は0"
+ ],
+ "sources_opened": [
+  "PRODUCTION.md（2-A・2-B）",
+  "posts/IG-ACC-20261123/post.json",
+  "posts/IG-ACC-20261123/meta.json",
+  "posts/IG-ACC-20261123/factcheck.json",
+  "posts/IG-REEL-20261124/reel.json",
+  "posts/IG-REEL-20261124/meta.json",
+  "posts/IG-REEL-20261124/story.json",
+  "posts/IG-REEL-20261124/factcheck.json",
+  "posts/IG-REEL-20261124/voice/voice.json"
+ ],
+ "frames_viewed": [
+  "reel.mp4 3秒（シーン1）",
+  "9秒（シーン2）",
+  "15秒（シーン3）",
+  "21秒（シーン4）",
+  "27秒（シーン5）",
+  "33秒（シーン6）",
+  "40秒（シーン7）",
+  "46秒（シーン8）",
+  "reel_cover.jpg",
+  "reel_contact.png",
+  "story_1.jpg",
+  "story_2.jpg",
+  "story_contact.png"
+ ],
+ "content_hash": "290ff02819b4e7471aa4e34adb54a2d512d83bf308d1f6eabdbe83fd03088a3e",
+ "media_viewed": {
+  "story_1.jpg": "305e9ad333de537c0faeaea2f19b57492881aeacd87235324d05613e3a7346e9",
+  "story_2.jpg": "a386f21463942c60aed4d7aa53681efc869ed487cc72857bc410e6a5505172a3",
+  "reel.mp4": "36765e2e0cdba820ba14c8287e941ccfb78afb7a63427e06aca997a8b8756d5a",
+  "reel_cover.jpg": "9ada597305ff054e8d644fb13178272a9d1db28f82de6faf02f0651ceba0b40c"
+ }
+}

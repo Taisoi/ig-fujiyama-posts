@@ -1,0 +1,21 @@
+{
+ "id": "IG-REEL-20261124",
+ "series": "accounting",
+ "frames": [
+  {
+   "type": "reel",
+   "heading": "新しいリール<br>値引きで<span class=\"em\">1.5倍</span>売る？",
+   "sub": "フジヤマが音声で解説します"
+  },
+  {
+   "type": "cta",
+   "pose": "n29",
+   "heading": "現場を任せて<br><span class=\"em\">1年</span>で何が？",
+   "lines": [
+    "手元資金が減った架空の事例",
+    "続きはThreadsで"
+   ],
+   "button": "プロフィールの<br>Threadsアイコンから"
+  }
+ ]
+}
