@@ -1,13 +1,9 @@
 {
- "status": "hold",
- "errors": [
-  "キャプションの「100円」が確認済みの数字の一覧（verified_values）にありません",
-  "リール4の「100円」が確認済みの数字の一覧（verified_values）にありません",
-  "リール4の「100円」が確認済みの数字の一覧（verified_values）にありません"
- ],
+ "status": "pass",
+ "errors": [],
  "notes": [],
  "content_hash": "290ff02819b4e7471aa4e34adb54a2d512d83bf308d1f6eabdbe83fd03088a3e",
- "checked_at": "2026-11-21T06:22:04+09:00",
+ "checked_at": "2026-11-21T06:22:12+09:00",
  "stage": "",
  "recheck_url": "",
  "stage_checked_at": ""
