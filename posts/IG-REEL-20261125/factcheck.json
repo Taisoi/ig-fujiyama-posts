@@ -1,0 +1,156 @@
+{
+ "no_external_facts": true,
+ "sources": [],
+ "claims": [],
+ "numbers": [
+  {
+   "label": "借入金",
+   "expr": "6000",
+   "value": 6000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "6,000万円",
+    "6,000万"
+   ]
+  },
+  {
+   "label": "現預金",
+   "expr": "1000",
+   "value": 1000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "1,000万円",
+    "1,000万"
+   ]
+  },
+  {
+   "label": "税引後の利益",
+   "expr": "300",
+   "value": 300,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "300万円"
+   ]
+  },
+  {
+   "label": "減価償却費",
+   "expr": "400",
+   "value": 400,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "400万円"
+   ]
+  },
+  {
+   "label": "返済に使えるお金",
+   "expr": "300+400",
+   "value": 700,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "700万円"
+   ]
+  },
+  {
+   "label": "借入−現預金",
+   "expr": "6000-1000",
+   "value": 5000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "5,000万円"
+   ]
+  },
+  {
+   "label": "債務償還年数（年）",
+   "expr": "(6000-1000)/(300+400)",
+   "value": 7.142857,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "約7.1年"
+   ]
+  },
+  {
+   "label": "年間の元金返済",
+   "expr": "80*12",
+   "value": 960,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "960万円"
+   ]
+  },
+  {
+   "label": "月の元金返済",
+   "expr": "80",
+   "value": 80,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "80万円"
+   ]
+  },
+  {
+   "label": "差し引き",
+   "expr": "700-960",
+   "value": -260,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "▲260万円",
+    "260万円"
+   ]
+  },
+  {
+   "label": "利益の増加 月",
+   "expr": "260/12",
+   "value": 21.67,
+   "tolerance": 0.5,
+   "kind": "架空例",
+   "conditions": [
+    "B社"
+   ],
+   "display": [
+    "約22万円",
+    "22万円"
+   ]
+  }
+ ],
+ "verified_values": [],
+ "verified_dates": []
+}
