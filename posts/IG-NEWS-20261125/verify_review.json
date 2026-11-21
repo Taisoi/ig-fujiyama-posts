@@ -1,0 +1,25 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/jittai/26/dl/08.pdf",
+  "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/jittai/26/dl/01.pdf",
+  "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/jittai/26/dl/02.pdf",
+  "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/jittai/26/dl/04.pdf"
+ ],
+ "content_hash": "318816b3f5cd6d1b543cbd1ac857fa52468afba5d44eadf4e2d9be4c67e80857",
+ "media_viewed": {
+  "01.jpg": "73bfb6fdafb7a45c4ccb8ba9c36864f0600b2418380c7f0ff77fe36b32aead42",
+  "02.jpg": "acee50ec4750dda1c21f1b6dc86f2bc47c888c38a1a87d8113514c73ad533906",
+  "03.jpg": "260bd7b4497131201b76963323cddfcef9ea968bb8f1b76b11564797a9150ab7",
+  "04.jpg": "17b9c8e85fae8dbb2e19216ee0630404f82d8a34d69571abee0940aa7b401dd1",
+  "05.jpg": "1030a587bb2b6f458c52a5b91586eebecacbe07b7e1ca12e5d53c3d31ae6c963",
+  "06.jpg": "256fbe9926901e968df141652581c1fc212e8595eccd637400773c1771b916c4",
+  "07.jpg": "b20bd5afce5fe70aee9b1346220eec6f3c093ecc2ecd69f4db8b19634846e584",
+  "08.jpg": "bc9b569b84e6c3388081b5ee48b4126a6b2911040a94fcd1db0d3acf3e840724",
+  "09.jpg": "b1957b24d8a7caa573429f055e88839e46ec1c1a2103ab6c7eed2188c8ff57e4",
+  "10.jpg": "23a662dc1b644e908a2001be5a68194da8f53faa24a0a99d668125869d6773a9"
+ },
+ "reviewed_at": "2026-11-22"
+}
