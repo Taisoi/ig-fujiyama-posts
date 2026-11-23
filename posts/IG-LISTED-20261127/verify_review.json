@@ -1,0 +1,24 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "sources_opened": [
+  "https://www2.jpx.co.jp/disc/46610/140120261029559144.pdf"
+ ],
+ "content_hash": "797bd86f73cf21fa8c76a8e5f4bd90173f8bf610b03c62cb8b056fa166aee8be",
+ "media_viewed": {
+  "01.jpg": "c539e018609d3c4cef7ac3751eea6750245c503545ba1752e048b09463cbbf72",
+  "02.jpg": "c753d25d1fdda2e532e2a7ea374ba14f4bfd64503ef4427b0f7fdd2c91a805c9",
+  "03.jpg": "2de7080fde18e48b930e5c764619a8289dfc8680bdd8c5177767ea17302e4ccd",
+  "04.jpg": "0f91959ebf0df91fbc4c181667ef1d9220704d0910f47f1037de4ae1053aef97",
+  "05.jpg": "c1e8c8a9bd2400806cb44e229b3cef5fce73297351e3c50edfa2b7521672f252",
+  "06.jpg": "c499ab898d0a9db7a5c77740c41c1b2a18830a054248c18faadc19be3e202597",
+  "07.jpg": "1d9aebc852f75e9ca9ea362e9c046c7c83cf31e9cbf4db4c7049a4a3739b43dc",
+  "08.jpg": "a4748c6394349a9c36e365319dc6b660f2a9d29c2b49e5b48283b59483b6d9c1",
+  "09.jpg": "07f0e3bfafba1d45627901ac33f6b5f73c56bd29b9fdaeef6469a3e2559c22d6",
+  "10.jpg": "dfa7296532c163e67b23867cb3afef2f4b6d6e96dd2609c1a412ae96112c8a13",
+  "story_1.jpg": "4fa57428825f898e2addd137dc42bf5db740de5e38d8a573e7262d42a7aa0a79",
+  "story_2.jpg": "1887292be414656035b3ba59d9c1ed741ed889505e7a91d0a726ef3fa0bd8f53",
+  "story_3.jpg": "47abace1ed8be5dc571c1a958a5acd4413315c5627e48c0a7d138e851f2d48e1"
+ }
+}

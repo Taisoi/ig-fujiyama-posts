@@ -1,0 +1,34 @@
+{
+ "id": "IG-LISTED-20261127",
+ "series": "listed",
+ "frames": [
+  {
+   "type": "ask",
+   "label": "2026年11月27日の投稿",
+   "pose": "n07",
+   "title": "テーマパークの人件費<br><span class=\"em\">51億円</span>増でなぜ増益？",
+   "sub": "2026年4〜9月。答えは<span class=\"em\">客数×客単価</span>に"
+  },
+  {
+   "type": "points",
+   "pose": "n28",
+   "heading": "決算説明資料の数字<br><span class=\"em\">3つ</span>",
+   "items": [
+    "入園者数は＋6.9%",
+    "1人当たり売上は＋744円",
+    "伸びたのは物販と飲食"
+   ]
+  },
+  {
+   "type": "cta",
+   "pose": "n41",
+   "heading": "チェックリストは<br><span class=\"em\">プロフィールの投稿</span>で",
+   "lines": [
+    "2026年11月27日の投稿",
+    "保存して月末に見返す",
+    "無料メルマガ「経営ノート通信」"
+   ],
+   "button": "プロフィールの<br>リンクから"
+  }
+ ]
+}
