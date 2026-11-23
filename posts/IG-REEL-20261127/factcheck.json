@@ -1,0 +1,149 @@
+{
+ "no_external_facts": true,
+ "sources": [],
+ "claims": [],
+ "numbers": [
+  {
+   "label": "前期の年商",
+   "expr": "30000",
+   "value": 30000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "3億円"
+   ]
+  },
+  {
+   "label": "当期の年商",
+   "expr": "33000",
+   "value": 33000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "3.3億円",
+    "3億3,000万円"
+   ]
+  },
+  {
+   "label": "前期の営業利益",
+   "expr": "7500-6600",
+   "value": 900,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "900万円",
+    "900万"
+   ]
+  },
+  {
+   "label": "当期の営業利益",
+   "expr": "7260-6900",
+   "value": 360,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "360万円",
+    "360万"
+   ]
+  },
+  {
+   "label": "前期の粗利率",
+   "expr": "7500/30000*100",
+   "value": 25,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "25%"
+   ]
+  },
+  {
+   "label": "当期の粗利率",
+   "expr": "7260/33000*100",
+   "value": 22,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "22%"
+   ]
+  },
+  {
+   "label": "販管費の増加",
+   "expr": "6900-6600",
+   "value": 300,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "300万円",
+    "＋300万円"
+   ]
+  },
+  {
+   "label": "売上の1%",
+   "expr": "33000*0.01",
+   "value": 330,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "330万円",
+    "＋330万円"
+   ]
+  },
+  {
+   "label": "粗利率1ポイント戻した営業利益",
+   "expr": "7260-6900+33000*0.01",
+   "value": 690,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "690万円"
+   ]
+  },
+  {
+   "label": "年商の増加率",
+   "expr": "(33000/30000-1)*100",
+   "value": 10,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "C社"
+   ],
+   "display": [
+    "＋10%",
+    "10%"
+   ]
+  }
+ ],
+ "verified_values": [
+  "1%",
+  "15人",
+  "3,000万円"
+ ],
+ "verified_dates": []
+}

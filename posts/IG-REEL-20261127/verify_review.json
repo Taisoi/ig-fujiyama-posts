@@ -1,0 +1,23 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "pass",
+ "issues": [],
+ "notes_minor": [
+  "表紙（reel_cover.jpg・story_1.jpg）は【架空事例】年商3.3億円のC社の試算・『〜増える計算です』と条件つきになり、表紙だけで一般則と誤解されにくくなった。『販管費は当期のまま』は表紙になく6シーン目の小見出しとキャプションにある（入れるとなおよい）",
+  "1シーン目の読み上げ音声は旧文『粗利率を1ポイント戻すだけで、営業利益は330万円増えます。』のままで、字幕（条件つき）と言い回しが違う。数字は一致",
+  "計算はすべて元の投稿と一致（25.0%→22.0%、900→360万円＝▲60.0%、＋10.0%、＋300万円、3.3億円×1%＝330万円、690万円）",
+  "キャプション最後から2行目の『処方箋3つ』と動画52.5秒は、制作側がmemoに記録して藤山さんへ報告する扱い",
+  "4行目の読み上げ『さ』の余分の可能性（memoの読み要確認）は未聴のまま"
+ ],
+ "sources_opened": [
+  "posts/IG-DIAG-20261029/post.json",
+  "posts/IG-DIAG-20261029/meta.json"
+ ],
+ "content_hash": "1c4003b2c43f7eb6181f1685afadf86b80b1c841929225868a036cd38f7fc4f3",
+ "media_viewed": {
+  "story_1.jpg": "dda356fa1490f3e742ebfc0b44a42dc0c1f803f6aeac2f731f424078c81eeeee",
+  "story_2.jpg": "314a7ffa580f4201c4a0976c74ffeb40e42e044c495550aab37eea33ac6615e6",
+  "reel.mp4": "77c37fea3c852c4ad13c4ca4c67ed0914b7de32b46a8bf97c1e26af2589b6d21",
+  "reel_cover.jpg": "dabc643650c383ffc91dfc245303455e9e54c584b98b7291f1cc162b0a337577"
+ }
+}
