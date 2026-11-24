@@ -1,0 +1,29 @@
+{
+ "reviewer": "independent-verifier",
+ "result": "hold",
+ "issues": [
+  "一次資料（https://www2.jpx.co.jp/disc/46610/140120261029559144.pdf オリエンタルランド 2027年3月期 第2四半期決算説明資料）を検証担当が開けなかった（2026-11-25、WebFetchが PROVENANCE_REQUIRED：URLの許可要求に時間内の応答がなく、再試行しないよう指示された。シェルのcurlはプロキシで拒否される）。p.4〜p.7 の数字（連結売上高・営業利益、テーマパーク事業の売上高・営業利益、入園者数、ゲスト1人当たり売上高と内訳、人件費の増51億円・うち業績賞与30億円、上半期で過去最高）を原資料と照合できていないため、2-A の6により保留",
+  "meta.json の memo に「検証担当がWebFetchで開いて照合した」と、検証前に完了したかのような記載がある。今回の検証では開けておらず事実と異なるため、削除または訂正が必要（factcheck.json の checked_at 2026-11-25・fetched:true も、制作側が今回開けていないなら同様に要確認）"
+ ],
+ "notes_minor": [
+  "照合できた範囲では、reel_cover.jpg・story_1.jpg・story_2.jpg・reel_contact.png・動画の途中のコマ（15・25・45・54秒）・reel.json の字幕/say・meta.json の title/caption の数字は、元の投稿 IG-LISTED-20261127（post.json・meta.json・factcheck.json）とすべて一致し、新しい事実は足されていない",
+  "Pythonで再計算：3,487/3,161＝＋10.31%、784/682＝＋14.96%、1,310/1,225＝＋6.94%、18,940/18,196＝＋4.09%、18,940−18,196＝744、▲25＋561＋208＝744、607−497＝110（表示は資料どおり＋109億円、キャプションに「億円未満の端数あり」の注記あり）",
+  "2-A・3の文言チェック：相対日付表現・不安をあおる表現・「強い」「△」「〜なんです」「*」は見当たらない。キャプション最後の2行はリールの固定形どおり。「特定の銘柄の売買をすすめるものではありません」あり。マイナスは▲",
+  "ストーリーズ2枚目は Threads 紹介で「社用車を現金で買った架空の事例」と架空を明記し、金額（2,000万円）は載っていない",
+  "表紙・story_1 の「利益は＋109億円」はテーマパーク事業の営業利益の増加。表紙は同じ面に「テーマパーク事業の営業利益 497億円→607億円」があるが、story_1 の見出しだけ見ると連結の利益と読める可能性がある",
+  "最後のシーンで「続きはプロフィールから」が見出しと下の帯（読み上げの文）の両方に表示され、memo の「1回だけ」と合わない",
+  "voice/voice.json の voice が gemini:voice_8qwzvjtocunq で、PRODUCTION.md 8 記載の承認済みの声 voice_e4gsoao11e59 と異なる（ワークフロー既定の変更かは未確認）",
+  "動画は57.3秒で、目安（35〜50秒）より長い（memo に記載あり）"
+ ],
+ "sources_opened": [],
+ "sources_attempted_not_opened": [
+  "https://www2.jpx.co.jp/disc/46610/140120261029559144.pdf"
+ ],
+ "content_hash": "02de8e21306c1033b964fae6ce27d65311acb58e9732688ea67d3969dce5f9f5",
+ "media_viewed": {
+  "reel_cover.jpg": "1a63fd97cacf2ebb3e7e264a089ffc2a2dc8acf01395a21a3f34bbd80d1cc60f",
+  "story_1.jpg": "b87edf5e9ff3fcf8c93c068f3049286f4fd361b845523a566bc1b844fe47481d",
+  "story_2.jpg": "cdb1a128003ef55f3ea612620e1c9351d4fc940d2002fc8f89d2b766f63cb454",
+  "reel.mp4": "7be2f620ca785da1254ef8bd9bcb3705660fba24e00aa4358416d115da610fd7"
+ }
+}
