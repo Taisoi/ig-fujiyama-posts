@@ -1,0 +1,129 @@
+{
+ "no_external_facts": true,
+ "sources": [],
+ "claims": [],
+ "numbers": [
+  {
+   "label": "役員貸付金",
+   "expr": "3000",
+   "value": 3000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "A社"
+   ],
+   "display": [
+    "3,000万円"
+   ]
+  },
+  {
+   "label": "年商",
+   "expr": "50000",
+   "value": 50000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "A社"
+   ],
+   "display": [
+    "5億円"
+   ]
+  },
+  {
+   "label": "営業利益",
+   "expr": "2000",
+   "value": 2000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "A社"
+   ],
+   "display": [
+    "2,000万円"
+   ]
+  },
+  {
+   "label": "純資産",
+   "expr": "12000",
+   "value": 12000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "A社"
+   ],
+   "display": [
+    "1億2,000万円"
+   ]
+  },
+  {
+   "label": "実質純資産",
+   "expr": "12000-3000",
+   "value": 9000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "A社"
+   ],
+   "display": [
+    "9,000万円"
+   ]
+  },
+  {
+   "label": "自己資本比率",
+   "expr": "12000/40000*100",
+   "value": 30.0,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "A社"
+   ],
+   "display": [
+    "30%",
+    "30.0%"
+   ]
+  },
+  {
+   "label": "実質自己資本比率",
+   "expr": "(12000-3000)/(40000-3000)*100",
+   "value": 24.3243,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "A社"
+   ],
+   "display": [
+    "約24.3%",
+    "24.3%"
+   ]
+  },
+  {
+   "label": "借入金",
+   "expr": "20000",
+   "value": 20000,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "A社"
+   ],
+   "display": [
+    "2億円"
+   ]
+  },
+  {
+   "label": "借入金の月商倍率",
+   "expr": "20000/(50000/12)",
+   "value": 4.8,
+   "tolerance": 0.06,
+   "kind": "架空例",
+   "conditions": [
+    "A社"
+   ],
+   "display": [
+    "4.8か月分",
+    "約4.8か月分"
+   ]
+  }
+ ],
+ "verified_values": [],
+ "verified_dates": []
+}
