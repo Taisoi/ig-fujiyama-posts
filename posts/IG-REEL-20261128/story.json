@@ -9,13 +9,13 @@
   },
   {
    "type": "cta",
-   "pose": "n46",
-   "heading": "消費税を納めたら<br>手元資金が<span class=\"em\">半減</span>",
+   "pose": "n40",
+   "heading": "役員貸付金、<br><span class=\"em\">残高</span>を確かめましたか？",
    "lines": [
-    "銀行に借入を相談した架空の事例",
-    "続きはThreadsで"
+    "返済計画を先につくる",
+    "無料メルマガ「経営ノート通信」"
    ],
-   "button": "プロフィールの<br>Threadsアイコンから"
+   "button": "プロフィールの<br>リンクから"
   }
  ]
 }
