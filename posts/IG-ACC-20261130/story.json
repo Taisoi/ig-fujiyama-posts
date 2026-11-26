@@ -1,0 +1,8 @@
+{"id":"IG-ACC-20261130","series":"accounting","frames":[
+ {"type":"ask","label":"11月30日の投稿","pose":"n08",
+  "title":"源泉税、<br>本当に<span class=\"em\">毎月</span>払ってる？","sub":"<span class=\"em\">納期の特例</span>の会社は年2回です"},
+ {"type":"points","pose":"pose_A","heading":"年内に<br><span class=\"em\">3つ</span>確認",
+  "items":["納期の特例の会社か確かめる","1月20日を資金繰り表に入れる","毎月の源泉税を別口座に分ける"]},
+ {"type":"cta","pose":"n29","heading":"チェックリストは<br><span class=\"em\">11月30日の投稿</span>で",
+  "lines":["保存して月末に見返す","無料メルマガ「経営ノート通信」"],"button":"プロフィールの<br>リンクから"}
+]}
