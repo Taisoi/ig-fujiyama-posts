@@ -1,0 +1,56 @@
+{
+ "reviewer": "independent-verifier",
+ "reviewed_at": "2026-11-27",
+ "result": "pass",
+ "issues": [],
+ "suggestions": [
+  "シーン7の字幕・読み上げ「売上が12.5%落ちても黒字だった余裕」は、ちょうど12.5%減なら利益ゼロ（黒字ではない）。元原稿の書き方（「売上が12.5%落ちると、赤字になる計算」）に近い「売上が12.5%落ちるまで赤字にならなかった余裕が、なくなります」などにすると正確になる（数字そのものは元原稿と一致）",
+  "キャプション最後から2行目が「詳しい図解はプロフィールの投稿で。保存して月末に見返してください」で、PRODUCTION.md「3」の定型（「詳しい図解とチェックリストは…」）と少し違う。memo の理由（元の投稿にチェックリストのページが無い）は妥当だが、ルールの定型に例外として明記しておくとよい",
+  "キャプションの「（1,000万円−600万円）」の「−」は引き算の記号でマイナスの値ではないため「3」の▲ルールには当たらないと判断したが、機械チェックで引っかかるなら「売上から変動費を引いた400万円」のような書き方も可",
+  "story_1.jpg の動画プレビュー内で、再生ボタンが字幕帯（「の会社が」「で利益ゼロに」）の一部を隠している。見出しと表紙側で内容は読めるため支障はないが、気になるなら再生ボタンを人物側に寄せる",
+  "voice.json の読み上げで「よんじゅっパーセント」（3行目）と「よんじゅうパーセント」（4・6行目）の表記揺れがある。どちらも40%の読みで字幕と矛盾はない"
+ ],
+ "sources_opened": [
+  {"path": "posts/IG-ACC-20261019/post.json", "opened": true, "what": "元のカルーセル10枚の原稿。ステップ②（売上1,000万円・変動費600万円・限界利益400万円（40%））、ステップ③（350万円÷40%＝875万円）、安全余裕率（1,000−875）÷1,000＝12.5%、月50万円の採用で固定費350万→400万円・分岐点875万→1,000万円、最終ページの「数字はすべて説明のための架空の例」を確認"},
+  {"path": "posts/IG-ACC-20261019/meta.json", "opened": true, "what": "元のキャプション。売上1,000万円・変動費600万円・固定費350万円、限界利益率40%、分岐点875万円、安全余裕率12.5%、月50万円の採用で固定費400万円・分岐点1,000万円・今の売上がそのままトントン、架空の例の注記、外部の数値は不使用"},
+  {"path": "posts/IG-REEL-20261129/reel.json", "opened": true, "what": "8シーンの text・small・say・caption。全シーンの金額の同じ面に「架空例：」の小見出しあり（最終シーンは金額なし）"},
+  {"path": "posts/IG-REEL-20261129/meta.json", "opened": true, "what": "title・caption・hashtags・angle（先頭にIG-ACC-20261019）・memo"},
+  {"path": "posts/IG-REEL-20261129/story.json", "opened": true, "what": "ストーリーズ2枚の文言（金額なし、2枚目に「数字は架空例」）"},
+  {"path": "posts/IG-REEL-20261129/factcheck.json", "opened": true, "what": "no_external_facts:true、numbers 6件はすべて kind 架空例、verified_values に画面・キャプションの全数字（1,000万円・600万円・350万円・50万円・400万円・40%・875万円・12.5%）が含まれる"},
+  {"path": "posts/IG-REEL-20261129/voice/voice.json", "opened": true, "what": "8行の読み上げ（かな表記）。字幕・say と数字・内容が一致"},
+  {"path": "posts/IG-REEL-20261129/reel_report.json", "opened": true, "what": "8シーン・51.0秒・声あり・warnings 空"},
+  {"path": "posts/IG-REEL-20261129/story_report.json", "opened": true, "what": "2枚・warnings 空"},
+  {"path": "PRODUCTION.md", "opened": true, "what": "2-A・2-B・3・8 を確認"}
+ ],
+ "recalc": [
+  {"label": "限界利益率", "expr": "(1000-600)/1000*100", "result": 40.0, "matches": true},
+  {"label": "採用前の損益分岐点", "expr": "350/0.4", "result": 875.0, "matches": true},
+  {"label": "採用後の固定費", "expr": "350+50", "result": 400, "matches": true},
+  {"label": "採用後の損益分岐点", "expr": "400/0.4", "result": 1000.0, "matches": true},
+  {"label": "採用前の安全余裕率", "expr": "(1000-875)/1000*100", "result": 12.5, "matches": true},
+  {"label": "採用後の利益（売上1,000万円）", "expr": "1000-600-400", "result": 0, "matches": true},
+  {"label": "採用前の利益（参考・1シーン目「利益ゼロに」の前提確認）", "expr": "1000-600-350", "result": 50, "matches": true}
+ ],
+ "frames_viewed": [
+  "posts/IG-REEL-20261129/reel_cover.jpg（架空例：月の売上1,000万円の会社／月50万円の採用で利益ゼロに。欠け・重なりなし）",
+  "posts/IG-REEL-20261129/reel_contact.png（8シーン一覧。全シーンに架空例の小見出し、はみ出しなし）",
+  "posts/IG-REEL-20261129/story_1.jpg（新しいリール 人を増やす前の試算。プレビュー内の再生ボタンが字幕帯の一部を隠す＝軽微）",
+  "posts/IG-REEL-20261129/story_2.jpg（人を増やす前に分岐点を計算／数字は架空例・手順は投稿で／メルマガ誘導。欠けなし）",
+  "/tmp/claude-0/reel_frame_3.jpg（シーン1）",
+  "/tmp/claude-0/reel_frame_10.jpg（シーン2：損益分岐点は875万円）",
+  "/tmp/claude-0/reel_frame_17.jpg（シーン3：限界利益率40%）",
+  "/tmp/claude-0/reel_frame_24.jpg（シーン4：350万円÷40%＝875万円）",
+  "/tmp/claude-0/reel_frame_31.jpg（シーン5：固定費350万→400万円）",
+  "/tmp/claude-0/reel_frame_38.jpg（シーン6：400万円÷40%＝1,000万円）",
+  "/tmp/claude-0/reel_frame_45.jpg（シーン7：余裕12.5%がなくなる）",
+  "/tmp/claude-0/reel_frame_48.jpg（シーン8：増やす前に分岐点を計算、検証担当が追加で書き出し）",
+  "/tmp/claude-0/reel_frame_50.jpg（終端50.8秒、シーン8のまま。検証担当が追加で書き出し）"
+ ],
+ "content_hash": "95b0c16b650fe45161e92fd67656ed7e8b1ca9e22c696b640c35f29fa5025258",
+ "media_viewed": {
+  "story_1.jpg": "2530dc981fb825ef7d2e05d8cfd4688ccf16010e0e41bb1f816d6d6b90332c23",
+  "story_2.jpg": "37bf848d80d1c1f68ba250ca7d7b88c3d380431bb47dfdddc16fe635ba61d9ce",
+  "reel.mp4": "59376e4c8f6257a0b42075a0b2cc7a33d6da9385dd23543a40dc95345c9db3c6",
+  "reel_cover.jpg": "c059d1a5a30b7b1d9ed2aa47070fdeda3f1197e90214430e6d82bb182394d7bf"
+ }
+}
